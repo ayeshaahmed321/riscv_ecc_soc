@@ -1,4 +1,10 @@
-    initial begin
+module imem (
+    input  logic [31:0] addr,
+    output logic [31:0] instr
+);
+    logic [31:0] rom [0:63];
+
+        initial begin
         // --- PHASE 1: TESTING A SINGLE (1-BIT) ERROR ---
         // 1. Load test data (A5A5A5A5) into register x1
         rom[0] = 32'hA5A5A093; 
@@ -27,3 +33,8 @@
         // 12. Read Status Dashboard (0x104) to verify double_err flag is UP
         rom[11] = 32'h0041A403; // x8 will read back 32'h00000002
     end
+
+
+    // Read asynchronously (word-aligned address)
+    assign instr = rom[addr[31:2]]; 
+endmodule
