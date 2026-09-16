@@ -13,7 +13,6 @@ class ecc_mem_seq_item extends uvm_sequence_item;
     logic        single_err;
     logic        double_err;
 
-    // Register this class with the UVM Factory
     `uvm_object_utils_begin(ecc_mem_seq_item)
         `uvm_field_int(addr,       UVM_ALL_ON)
         `uvm_field_int(wdata,      UVM_ALL_ON)
@@ -28,8 +27,12 @@ class ecc_mem_seq_item extends uvm_sequence_item;
         super.new(name);
     endfunction
 
-    // Constrain the randomized addresses strictly to the SRAM space
+    // Constrain the randomized addresses strictly to the SRAM space (0x00 to 0xFC)
     constraint addr_c {
         addr inside {[32'h0000_0000 : 32'h0000_00FC]};
     }
+
+constraint fault_c {
+    $countones(fault_mask) <= 2;
+}
 endclass
