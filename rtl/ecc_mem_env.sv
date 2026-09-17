@@ -1,7 +1,3 @@
-import uvm_pkg::*;
-`include "uvm_macros.svh"
-
-// 1. Agent Component
 class ecc_mem_agent extends uvm_agent;
     `uvm_component_utils(ecc_mem_agent)
 
@@ -26,7 +22,6 @@ class ecc_mem_agent extends uvm_agent;
     endfunction
 endclass
 
-// 2. Environment Component
 class ecc_mem_env extends uvm_env;
     `uvm_component_utils(ecc_mem_env)
 

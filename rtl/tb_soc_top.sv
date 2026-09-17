@@ -1,32 +1,31 @@
-module tb_soc_top();
+module tb_soc_top;
     logic clk;
     logic reset;
+    
+    // New Physical I/O
+    logic pwm_out, tacho_in;
+    logic sclk, mosi, miso, cs_n;
 
-    // Instantiate the Top Level
-    soc_top dut (
-        .clk(clk),
-        .reset(reset)
-    );
-
-    // Clock generation
     initial begin
         clk = 0;
-        forever #5 clk = ~clk; 
+        forever #5 clk = ~clk;
     end
 
-    // Run Simulation
     initial begin
-        $display("--- Starting RISC-V ECC System Execution ---");
-        
-        // Hold reset
         reset = 1;
-        #15;
-        reset = 0;
-        
-        // Let the program run for 10 clock cycles
-        #100;
-        
-        $display("--- Execution Complete ---");
-        $stop;
+        tacho_in = 0;
+        miso = 1; // Simulate external SPI chip sending data back
+        #10 reset = 0;
     end
+
+    soc_top dut (
+        .clk(clk),
+        .reset(reset),
+        .pwm_out(pwm_out),
+        .tacho_in(tacho_in),
+        .sclk(sclk),
+        .mosi(mosi),
+        .miso(miso),
+        .cs_n(cs_n)
+    );
 endmodule

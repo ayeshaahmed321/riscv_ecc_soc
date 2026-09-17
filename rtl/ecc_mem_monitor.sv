@@ -3,7 +3,9 @@ import uvm_pkg::*;
 
 class ecc_mem_monitor extends uvm_monitor;
     `uvm_component_utils(ecc_mem_monitor)
-    virtual ecc_mem_if vif;
+    
+    // Updated to point to our unified virtual interface
+    virtual soc_if vif;
     uvm_analysis_port #(ecc_mem_seq_item) ap;
 
     function new(string name = "ecc_mem_monitor", uvm_component parent = null);
@@ -13,7 +15,10 @@ class ecc_mem_monitor extends uvm_monitor;
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-        uvm_config_db#(virtual ecc_mem_if)::get(this, "", "vif", vif);
+        // Pull the unified interface from the configuration database
+        if (!uvm_config_db#(virtual soc_if)::get(this, "", "vif", vif)) begin
+            `uvm_fatal("MON", "Could not get virtual interface vif from config_db")
+        end
     endfunction
 
     task run_phase(uvm_phase phase);
@@ -22,38 +27,48 @@ class ecc_mem_monitor extends uvm_monitor;
         logic [38:0] cap_mask;
 
         forever begin
-            @(posedge vif.clk);
-            #1; // Wait 1ns to sample stable signals
+            // FIXED: Wait on the clocking block edge for perfectly sampled values
+            @(vif.cb);
             
-            // Snoop APB: Capture the fault mask
-            if (vif.psel && vif.penable && vif.pready && vif.pwrite) cap_mask = vif.pwdata;
+            // Snoop APB: Capture the fault mask safely from the clocking block
+            if (vif.cb.psel && vif.cb.penable && vif.cb.pready && vif.cb.pwrite) begin
+                if (vif.cb.paddr == 32'h0000_0100) begin
+                    cap_mask = {7'b0, vif.cb.pwdata};
+                end
+            end
             
-            // Snoop AXI: Capture Write Address and Data
-            if (vif.awvalid && vif.awready) cap_addr = vif.awaddr;
-            if (vif.wvalid &&  vif.wready)  cap_wdata = vif.wdata;
+            // Snoop AXI Write Channel
+            if (vif.cb.awvalid && vif.cb.awready) cap_addr = vif.cb.awaddr;
+            if (vif.cb.wvalid &&  vif.cb.wready)  cap_wdata = vif.cb.wdata;
             
-            // Broadcast AXI Write Transaction
-            if (vif.bvalid && vif.bready) begin
+            // Broadcast AXI Write Transaction once complete
+            if (vif.cb.bvalid && vif.cb.bready) begin
                 trans = ecc_mem_seq_item::type_id::create("trans");
-                trans.we = 1'b1;
-                trans.addr = cap_addr;
-                trans.wdata = cap_wdata;
+                trans.we         = 1'b1;
+                trans.addr       = cap_addr;
+                trans.wdata      = cap_wdata;
                 trans.fault_mask = cap_mask;
+                
+                // Track current execution state for debugging context
+                trans.pc         = vif.cb.pc; 
                 ap.write(trans);
             end
 
-            // Snoop AXI: Capture Read Address
-            if (vif.arvalid && vif.arready) cap_addr = vif.araddr;
+            // Snoop AXI Read Channel
+            if (vif.cb.arvalid && vif.cb.arready) cap_addr = vif.cb.araddr;
             
-            // Broadcast AXI Read Transaction
-            if (vif.rvalid && vif.rready) begin
+            // Broadcast AXI Read Transaction once complete
+            if (vif.cb.rvalid && vif.cb.rready) begin
                 trans = ecc_mem_seq_item::type_id::create("trans");
-                trans.we = 1'b0;
-                trans.addr = cap_addr;
-                trans.rdata = vif.rdata;
+                trans.we         = 1'b0;
+                trans.addr       = cap_addr;
+                trans.rdata      = vif.cb.rdata;
                 trans.fault_mask = cap_mask;
-                trans.single_err = vif.single_err;
-                trans.double_err = vif.double_err;
+                trans.single_err = vif.cb.single_err;
+                trans.double_err = vif.cb.double_err;
+                
+                // Track current execution state for debugging context
+                trans.pc         = vif.cb.pc; 
                 ap.write(trans);
             end
         end
