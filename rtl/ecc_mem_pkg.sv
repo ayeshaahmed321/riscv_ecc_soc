@@ -9,6 +9,7 @@ package ecc_mem_pkg;
     `include "ecc_mem_driver.sv"
     `include "ecc_mem_monitor.sv"
     `include "ecc_mem_scoreboard.sv"
+    `include "ecc_mem_coverage.sv"
     `include "ecc_mem_env.sv"
     `include "ecc_mem_test.sv"
 endpackage

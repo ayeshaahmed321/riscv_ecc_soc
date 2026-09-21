@@ -25,7 +25,7 @@ class ecc_mem_scoreboard extends uvm_scoreboard;
 
                 if (bits_flipped == 0) begin
                     if (trans.rdata !== expected_data) begin
-                        `uvm_error("SCB_ECC", \$sformatf("MISMATCH! Expected=0x%8h, Got=0x%8h", expected_data, trans.rdata))
+                        `uvm_error("SCB_ECC", $sformatf("MISMATCH! Expected=0x%8h, Got=0x%8h", expected_data, trans.rdata))
                     end
                 end
                 else if (bits_flipped == 1) begin
@@ -50,7 +50,7 @@ class ecc_mem_scoreboard extends uvm_scoreboard;
                 case (trans.addr)
                     32'h0000_0108: begin
                         last_spi_transmitted = trans.wdata[7:0];
-                        `uvm_info("SCB_SPI", \$sformatf("PC [0x%8h]: SPI Out: 0x%2h", trans.pc, last_spi_transmitted), UVM_LOW)
+                        `uvm_info("SCB_SPI", $sformatf("PC [0x%8h]: SPI Out: 0x%2h", trans.pc, last_spi_transmitted), UVM_LOW)
                     end
                     32'h0000_010C: begin
                         expected_pwm_threshold = trans.wdata[7:0];
@@ -62,7 +62,7 @@ class ecc_mem_scoreboard extends uvm_scoreboard;
 
         // CHECK 3: FAIL-SAFE WATCHDOG CHECK
         if (trans.wdog_reset_out == 1'b1) begin
-            `uvm_info("SCB_FAILSAFE", \$sformatf("ALERT: Watchdog Reset detected at PC [0x%8h]", trans.pc), UVM_LOW)
+            `uvm_info("SCB_FAILSAFE", $sformatf("ALERT: Watchdog Reset detected at PC [0x%8h]", trans.pc), UVM_LOW)
         end
     endfunction
 endclass

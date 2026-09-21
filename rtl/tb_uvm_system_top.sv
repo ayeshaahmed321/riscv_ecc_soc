@@ -3,12 +3,7 @@
 module tb_uvm_system_top;
     import uvm_pkg::*;
     `include "uvm_macros.svh"
-    
-    // Inline compilation of the UVM environment
-    `include "cpu_bus_seq_item.sv"
-    `include "cpu_bus_sequence.sv"
-    `include "cpu_bus_driver.sv"
-    `include "cpu_bus_test.sv"
+    import cpu_bus_pkg::*;
 
     logic clk, reset;
     initial begin clk = 0; forever #5 clk = ~clk; end
@@ -18,12 +13,22 @@ module tb_uvm_system_top;
     cpu_bus_if vif(clk, reset);
     
     // Physical Pins
-    logic pwm_out, sclk, mosi, cs_n;
+    logic pwm_out, sclk, mosi, cs_n, nmi_stall_w;
 
     // Internal AMBA routing
     logic [31:0] prdata_motor, prdata_spi;
     logic pready_motor, pready_spi, psel_motor, psel_spi, penable, pwrite;
     logic [31:0] paddr, pwdata;
+
+    // Feed physical peripheral pins into the UVM interface so the monitor,
+    // scoreboard, and coverage collector can observe them.
+    assign vif.pwm_out   = pwm_out;
+    assign vif.tacho_in  = 1'b0;      // tied off here (no external tach model)
+    assign vif.nmi_stall = nmi_stall_w;
+    assign vif.sclk      = sclk;
+    assign vif.mosi      = mosi;
+    assign vif.miso      = 1'b1;
+    assign vif.cs_n      = cs_n;
 
     // 1. The Interconnect
     amba_interconnect bus_matrix (
@@ -48,10 +53,12 @@ module tb_uvm_system_top;
     );
 
     // 2. Motor Controller Slave
-    apb_motor_ctrl motor (
+    // STALL_WINDOW overridden to 50 cycles for simulation speed only —
+    // the RTL default (1,000,000) is untouched for real hardware/synthesis.
+    apb_motor_ctrl #(.STALL_WINDOW(20'd50)) motor (
         .pclk(clk), .presetn(~reset), .psel(psel_motor), .penable(penable), .pwrite(pwrite),
         .paddr(paddr), .pwdata(pwdata), .prdata(prdata_motor), .pready(pready_motor),
-        .pwm_out(pwm_out), .tacho_in(1'b0), .nmi_stall()
+        .pwm_out(pwm_out), .tacho_in(1'b0), .nmi_stall(nmi_stall_w)
     );
 
     // 3. SPI Master Slave

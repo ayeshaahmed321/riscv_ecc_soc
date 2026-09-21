@@ -9,6 +9,14 @@ class cpu_bus_seq_item extends uvm_sequence_item;
     rand logic        we;
     logic [31:0]      rdata;
 
+    // Peripheral telemetry captured by the monitor (not randomized)
+    logic             pwm_out;
+    logic             rpm_pulse_in;
+    logic             spi_mosi;
+    logic             spi_miso;
+    logic             spi_sclk;
+    logic             cpu_stall; // reused here to carry the motor fail-safe flag
+
     // Constrain random traffic to only hit the Motor and SPI address spaces
     constraint peripheral_addr_c {
         addr inside {

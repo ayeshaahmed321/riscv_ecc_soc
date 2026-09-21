@@ -1,11 +1,14 @@
-module apb_motor_ctrl (
+module apb_motor_ctrl #(
+    parameter logic [19:0] STALL_WINDOW = 20'd1_000_000
+) (
     input  logic        pclk,
     input  logic        presetn,
     
     // APB Slave Interface
     input  logic        psel, penable, pwrite,
     input  logic [31:0] paddr, pwdata,
-    output logic [31:0] prdata, pready,
+    output logic [31:0] prdata,
+    output logic        pready,
 
     // Motor I/O
     output logic        pwm_out,
@@ -82,7 +85,7 @@ module apb_motor_ctrl (
             
             if (tacho_edge) edge_counter <= edge_counter + 1;
 
-            if (window_timer == 20'd1_000_000) begin
+            if (window_timer == STALL_WINDOW) begin
                 window_timer <= 0;
                 rpm_count <= edge_counter; // Update readable RPM register
                 edge_counter <= 0;         // Reset for next window

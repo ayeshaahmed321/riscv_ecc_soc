@@ -27,6 +27,7 @@ class ecc_mem_env extends uvm_env;
 
     ecc_mem_agent      agent;
     ecc_mem_scoreboard scb;
+    ecc_mem_coverage   cov;
 
     function new(string name = "ecc_mem_env", uvm_component parent = null);
         super.new(name, parent);
@@ -36,10 +37,12 @@ class ecc_mem_env extends uvm_env;
         super.build_phase(phase);
         agent = ecc_mem_agent::type_id::create("agent", this);
         scb   = ecc_mem_scoreboard::type_id::create("scb", this);
+        cov   = ecc_mem_coverage::type_id::create("cov", this);
     endfunction
 
     function void connect_phase(uvm_phase phase);
         super.connect_phase(phase);
         agent.mon.ap.connect(scb.ap_export);
+        agent.mon.ap.connect(cov.analysis_export);
     endfunction
 endclass

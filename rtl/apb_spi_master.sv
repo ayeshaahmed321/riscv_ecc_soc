@@ -5,7 +5,8 @@ module apb_spi_master (
     // APB Slave Interface
     input  logic        psel, penable, pwrite,
     input  logic [31:0] paddr, pwdata,
-    output logic [31:0] prdata, pready,
+    output logic [31:0] prdata,
+    output logic        pready,
 
     // SPI Physical Interface (Mode 0: CPOL=0, CPHA=0)
     output logic        sclk,

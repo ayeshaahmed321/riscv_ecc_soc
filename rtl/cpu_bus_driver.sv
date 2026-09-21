@@ -11,7 +11,7 @@ class cpu_bus_driver extends uvm_driver #(cpu_bus_seq_item);
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-        uvm_config_db#(virtual cpu_bus_if)::get(this, "", "vif", vif);
+        void'(uvm_config_db#(virtual cpu_bus_if)::get(this, "", "vif", vif));
     endfunction
 
     task run_phase(uvm_phase phase);
