@@ -53,9 +53,9 @@ module tb_uvm_system_top;
     );
 
     // 2. Motor Controller Slave
-    // STALL_WINDOW overridden to 50 cycles for simulation speed only —
-    // the RTL default (1,000,000) is untouched for real hardware/synthesis.
-    apb_motor_ctrl #(.STALL_WINDOW(20'd50)) motor (
+    // STALL_WINDOW and PROFILE_STEP_TIME overridden for simulation speed
+    // only — the RTL defaults are untouched for real hardware/synthesis.
+    apb_motor_ctrl #(.STALL_WINDOW(20'd50), .PROFILE_STEP_TIME(20'd10)) motor (
         .pclk(clk), .presetn(~reset), .psel(psel_motor), .penable(penable), .pwrite(pwrite),
         .paddr(paddr), .pwdata(pwdata), .prdata(prdata_motor), .pready(pready_motor),
         .pwm_out(pwm_out), .tacho_in(1'b0), .nmi_stall(nmi_stall_w)

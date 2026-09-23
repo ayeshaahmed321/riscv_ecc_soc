@@ -22,7 +22,7 @@ class cpu_bus_test extends uvm_test;
         `uvm_info("TEST", "Starting System Bus Verification Sequence...", UVM_LOW)
         seq.start(env.agent.sqr);
 
-        #2000ns; // margin for SPI shifting + the stall-window wait inside the sequence
+        #2500ns; // margin for SPI shifting + the profile/stall-window waits inside the sequence
         phase.drop_objection(this);
     endtask
 endclass

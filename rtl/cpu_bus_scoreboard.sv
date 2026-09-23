@@ -42,5 +42,25 @@ class cpu_bus_scoreboard extends uvm_scoreboard;
             last_spi_byte = trans.wdata[7:0];
             `uvm_info("SCB_SPI", $sformatf("SPI byte queued: 0x%2h", last_spi_byte), UVM_LOW)
         end
+
+        // CHECK 5: Profile status read (0x230) after the wait window must
+        // show running == 0 (the 8-step sequence should have finished).
+        if (!trans.we && trans.addr == 32'h0000_0230) begin
+            if (trans.rdata[0] !== 1'b0) begin
+                `uvm_error("SCB_PROFILE", "Profile still running when it should have completed")
+            end else begin
+                `uvm_info("SCB_PROFILE", "Profile sequencer completed as expected", UVM_LOW)
+            end
+        end
+
+        // CHECK 6: Profile index read (0x234) after completion must show
+        // the last step (7) was reached.
+        if (!trans.we && trans.addr == 32'h0000_0234) begin
+            if (trans.rdata[2:0] !== 3'd7) begin
+                `uvm_error("SCB_PROFILE", $sformatf("Profile index=%0d, expected last step (7)", trans.rdata[2:0]))
+            end else begin
+                `uvm_info("SCB_PROFILE", "Profile index reached final step (7)", UVM_LOW)
+            end
+        end
     endfunction
 endclass

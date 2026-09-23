@@ -48,7 +48,25 @@ module imem (
             // SW x13, 0(x8)       (clear fault_mask)
             32'h48: instr = 32'h00D42023;
 
-            // --- 4. Infinite Loop to keep CPU active ---
+            // --- 4. New-ISA smoke test (ALU R-type, branch, jump) ---
+            // ADD x14, x1, x2     (R-type ALU: x14 = 0x200 + 0x7F = 0x27F)
+            32'h4C: instr = 32'h00208733;
+            // ADDI x15, x0, 5     (control value)
+            32'h50: instr = 32'h00500793;
+            // BEQ x0, x0, +8      (always taken -> must skip the next instr)
+            32'h54: instr = 32'h00000463;
+            // ADDI x16, x0, 999   (must be SKIPPED if branch works)
+            32'h58: instr = 32'h3E700813;
+            // ADDI x17, x0, 111   (branch lands here)
+            32'h5C: instr = 32'h06F00893;
+            // JAL x18, +8         (link = pc+4, jump -> must skip next instr)
+            32'h60: instr = 32'h0080096F;
+            // ADDI x19, x0, 888   (must be SKIPPED if jump works)
+            32'h64: instr = 32'h37800993;
+            // ADDI x20, x0, 222   (jump lands here)
+            32'h68: instr = 32'h0DE00A13;
+
+            // --- 5. Infinite Loop to keep CPU active ---
             // ADDI x0, x0, 0 (NOP)
             default: instr = 32'h00000013; 
         endcase

@@ -111,6 +111,18 @@ module tb_soc_top;
         wait_until_pc(32'h4C);
         check("CLEANUP: fault_mask == 0", dut.fault_mask, 39'h0);
 
+        // --- TEST 6: New-ISA smoke test — R-type ALU, branch, jump ---
+        wait_until_pc(32'h60);
+        check("ISA: x14 == ADD(x1,x2) == 0x27F", dut.processor.regfile[14], 32'h27F);
+        check("ISA: x15 == 5 (control value)",   dut.processor.regfile[15], 32'h5);
+        check("ISA: x16 == 0 (BEQ correctly skipped it)", dut.processor.regfile[16], 32'h0);
+        check("ISA: x17 == 111 (branch landed correctly)", dut.processor.regfile[17], 32'h6F);
+
+        wait_until_pc(32'h6C);
+        check("ISA: x18 == 0x64 (JAL link = pc+4)", dut.processor.regfile[18], 32'h64);
+        check("ISA: x19 == 0 (JAL correctly skipped it)", dut.processor.regfile[19], 32'h0);
+        check("ISA: x20 == 222 (jump landed correctly)", dut.processor.regfile[20], 32'hDE);
+
         // ---------------- Summary ----------------
         $display("==================================================");
         if (errors == 0) begin

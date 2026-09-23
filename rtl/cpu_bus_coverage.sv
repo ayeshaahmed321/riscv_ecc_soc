@@ -12,11 +12,14 @@ class cpu_bus_coverage extends uvm_subscriber #(cpu_bus_seq_item);
         }
 
         cp_addr: coverpoint tr.addr {
-            bins motor_duty  = {32'h0000_0200};
-            bins motor_rpm   = {32'h0000_0204};
-            bins motor_stall = {32'h0000_0208};
-            bins spi_data    = {32'h0000_0300};
-            bins spi_status  = {32'h0000_0304};
+            bins motor_duty    = {32'h0000_0200};
+            bins motor_rpm     = {32'h0000_0204};
+            bins motor_stall   = {32'h0000_0208};
+            bins profile_steps = {[32'h0000_0210 : 32'h0000_022C]};
+            bins profile_ctrl  = {32'h0000_0230};
+            bins profile_index = {32'h0000_0234};
+            bins spi_data      = {32'h0000_0300};
+            bins spi_status    = {32'h0000_0304};
         }
 
         cp_pwm: coverpoint tr.pwm_out {
@@ -47,10 +50,12 @@ class cpu_bus_coverage extends uvm_subscriber #(cpu_bus_seq_item);
         // legitimately happen given this register map, so they're excluded
         // rather than left as permanently-uncoverable holes.
         x_addr_vs_we: cross cp_addr, cp_we {
-            ignore_bins duty_read_never_happens  = binsof(cp_addr.motor_duty) && binsof(cp_we.read);
-            ignore_bins rpm_write_never_happens  = binsof(cp_addr.motor_rpm)  && binsof(cp_we.write);
-            ignore_bins spi_read_never_happens   = binsof(cp_addr.spi_data)   && binsof(cp_we.read);
+            ignore_bins duty_read_never_happens    = binsof(cp_addr.motor_duty) && binsof(cp_we.read);
+            ignore_bins rpm_write_never_happens    = binsof(cp_addr.motor_rpm)  && binsof(cp_we.write);
+            ignore_bins spi_read_never_happens     = binsof(cp_addr.spi_data)   && binsof(cp_we.read);
             ignore_bins status_write_never_happens = binsof(cp_addr.spi_status) && binsof(cp_we.write);
+            ignore_bins profile_steps_read_never_happens = binsof(cp_addr.profile_steps) && binsof(cp_we.read);
+            ignore_bins profile_index_write_never_happens = binsof(cp_addr.profile_index) && binsof(cp_we.write);
         }
     endgroup
 

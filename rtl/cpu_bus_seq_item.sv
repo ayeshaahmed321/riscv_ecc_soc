@@ -21,6 +21,7 @@ class cpu_bus_seq_item extends uvm_sequence_item;
     constraint peripheral_addr_c {
         addr inside {
             [32'h0000_0200 : 32'h0000_0208], // Motor Control Registers
+            [32'h0000_0210 : 32'h0000_0234], // Motor Profile-Loading Registers
             [32'h0000_0300 : 32'h0000_0304]  // SPI Master Registers
         };
     }
