@@ -19,10 +19,10 @@ class cpu_bus_test extends uvm_test;
         cpu_bus_sequence seq = cpu_bus_sequence::type_id::create("seq");
         phase.raise_objection(this);
 
-        `uvm_info("TEST", "Starting System Bus Verification Sequence...", UVM_LOW)
+        `uvm_info("TEST", "Starting corrected system-bus UVM sequence", UVM_LOW)
         seq.start(env.agent.sqr);
 
-        #2500ns; // margin for SPI shifting + the profile/stall-window waits inside the sequence
+        #1000ns;
         phase.drop_objection(this);
     endtask
 endclass

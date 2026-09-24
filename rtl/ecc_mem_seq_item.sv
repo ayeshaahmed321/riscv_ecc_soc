@@ -21,6 +21,14 @@ class ecc_mem_seq_item extends uvm_sequence_item;
     logic [31:0] pc;
     logic        cpu_stall;
     rand logic [38:0] fault_mask;
+
+    // SRAM is 64 x 32-bit and the AXI address is byte based.
+    // Keep UVM traffic inside the implemented 0x0000_0000-0x0000_00FC
+    // memory window and aligned to 32-bit words.
+    constraint addr_c {
+        addr < 32'h0000_0100;
+        addr[1:0] == 2'b00;
+    }
     logic        single_err;
     logic        double_err;
 

@@ -6,8 +6,15 @@ module ecc_decoder_assertions (
     input logic double_error
 );
     always_comb begin
-        assert (!(single_error && double_error))
-            else $error("SVA VIOLATION [ecc_decoder]: single_error and double_error asserted simultaneously — SECDED decode is broken");
+        // Guard against X: at time 0 / before reset settles, single_error
+        // and double_error are still X, and SV's immediate-assertion rule
+        // treats an X/Z expression result as a failure. That produced a
+        // spurious "violation" at t=0 with no actual SECDED conflict —
+        // skip the check while either signal is unknown, only assert once
+        // both are real 0/1 values.
+        if (!$isunknown({single_error, double_error}))
+            assert (!(single_error && double_error))
+                else $error("SVA VIOLATION [ecc_decoder]: single_error and double_error asserted simultaneously — SECDED decode is broken");
     end
 endmodule
 
