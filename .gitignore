@@ -1,10 +1,14 @@
-# Questa / ModelSim simulation artifacts
+# QuestaSim Compiled Library Cache
 work/
-_info
+
+# Binary Coverage Databases
+*.ucdb
+
+# Simulator Logs and Working Artifacts
 transcript
-*.wlf
-*.vstf
+vsim.wlf
 *.log
-*.mpf
-*.syn
-*.orig
+*.bak
+*.qdb
+*.qpg
+*.qtl

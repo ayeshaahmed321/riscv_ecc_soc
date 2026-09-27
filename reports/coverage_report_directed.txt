@@ -1,0 +1,3009 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/rom
+=== Design Unit: work.imem
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        28        26         2    92.85%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/rom
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File imem.sv
+------------------------------------CASE Branch------------------------------------
+    6                                         28     Count coming in to CASE
+    9               1                          1     
+    11              1                          1     
+    13              1                          1     
+    17              1                          1     
+    19              1                          1     
+    21              1                          1     
+    25              1                          1     
+    27              1                          1     
+    29              1                          1     
+    31              1                          1     
+    33              1                          1     
+    35              1                          1     
+    37              1                          1     
+    39              1                          1     
+    41              1                          1     
+    43              1                          1     
+    45              1                          1     
+    47              1                          1     
+    49              1                          1     
+    53              1                          1     
+    55              1                          1     
+    57              1                          1     
+    59              1                    ***0***     
+    61              1                          1     
+    63              1                          1     
+    65              1                    ***0***     
+    67              1                          1     
+    71              1                          3     
+Branch totals: 26 hits of 28 branches = 92.85%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      29        27         2    93.10%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/rom --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File imem.sv
+    5               1                         28     
+    9               1                          1     
+    11              1                          1     
+    13              1                          1     
+    17              1                          1     
+    19              1                          1     
+    21              1                          1     
+    25              1                          1     
+    27              1                          1     
+    29              1                          1     
+    31              1                          1     
+    33              1                          1     
+    35              1                          1     
+    37              1                          1     
+    39              1                          1     
+    41              1                          1     
+    43              1                          1     
+    45              1                          1     
+    47              1                          1     
+    49              1                          1     
+    53              1                          1     
+    55              1                          1     
+    57              1                          1     
+    59              1                    ***0***     
+    61              1                          1     
+    63              1                          1     
+    65              1                    ***0***     
+    67              1                          1     
+    71              1                          3     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/processor/rv32i_core_sva_inst
+=== Design Unit: work.rv32i_core_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_soc_top/dut/processor/rv32i_core_sva_inst/assert__p_no_mem_req_during_reset
+                     core_assertions.sv(17)             0          1
+/tb_soc_top/dut/processor/rv32i_core_sva_inst/assert__p_pc_word_aligned
+                     core_assertions.sv(11)             0          1
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/processor
+=== Design Unit: work.rv32i_core
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        59        37        22    62.71%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/processor
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rv32i_core.sv
+------------------------------------IF Branch------------------------------------
+    68                                        33     Count coming in to IF
+    68              1                         13     
+    68              2                         20     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                        41     Count coming in to IF
+    69              1                         26     
+    69              2                         15     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                        46     Count coming in to IF
+    78              1                          2     
+    78              2                         44     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    83                                        21     Count coming in to IF
+    83              1                          1     
+    84              1                         20     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    84                                        20     Count coming in to IF
+    84              2                    ***0***     
+    85              1                         20     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------CASE Branch------------------------------------
+    88                                        28     Count coming in to CASE
+    89              1                         18     
+    90              1                    ***0***     
+    91              1                          9     
+    92              1                    ***0***     
+    93              1                    ***0***     
+    94              1                    ***0***     
+    96              1                    ***0***     
+    97              1                    ***0***     
+    98              1                          1     
+Branch totals: 3 hits of 9 branches = 33.33%
+
+------------------------------------IF Branch------------------------------------
+    89                                        18     Count coming in to IF
+    89              2                    ***0***     
+    89              3                         18     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    91                                         9     Count coming in to IF
+    91              2                          1     
+    91              3                          8     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    92                                   ***0***     Count coming in to IF
+    92              2                    ***0***     
+    92              3                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    94                                   ***0***     Count coming in to IF
+    94              2                    ***0***     
+    95              1                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    105                                       23     Count coming in to CASE
+    106             1                         13     
+    107             1                    ***0***     
+    108             1                    ***0***     
+    109             1                    ***0***     
+    110             1                    ***0***     
+    111             1                    ***0***     
+    112             1                         10     
+Branch totals: 2 hits of 7 branches = 28.57%
+
+------------------------------------IF Branch------------------------------------
+    129                                       28     Count coming in to IF
+    129             1                          3     
+    130             1                          6     
+                                              19     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    140                                       56     Count coming in to IF
+    140             1                          2     
+    142             1                    ***0***     
+    144             1                          2     
+                                              52     All False Count
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    149                                       38     Count coming in to IF
+    149             1                          2     
+    150             1                         27     
+                                               9     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    159                                       67     Count coming in to CASE
+    160             1                    ***0***     
+    161             1                    ***0***     
+    162             1                          2     
+    163             1                    ***0***     
+    164             1                          3     
+    165             1                         33     
+    166             1                          9     
+    167             1                         20     
+Branch totals: 5 hits of 8 branches = 62.50%
+
+------------------------------------IF Branch------------------------------------
+    166                                        9     Count coming in to IF
+    166             2                          9     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    172                                       38     Count coming in to IF
+    172             1                          2     
+    176             1                         27     
+                                               9     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    177                                       27     Count coming in to IF
+    177             1                         18     
+                                               9     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      11         8         3    72.72%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top/dut/processor --
+
+  File rv32i_core.sv
+----------------Focused Condition View-------------------
+Line       68 Item    1  (rs1 != 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       69 Item    1  (rs2 != 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       78 Item    1  (opcode == 51)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       91 Item    1  (rdata1 < alu_op_b)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       92 Item    1  (rdata1 < alu_op_b)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+  (rdata1 < alu_op_b)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:    ***0***  (rdata1 < alu_op_b)_0  -                             
+  Row   2:    ***0***  (rdata1 < alu_op_b)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       140 Item    1  (opcode == 111)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       142 Item    1  (opcode == 103)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (opcode == 103)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (opcode == 103)_0     -                             
+  Row   2:    ***0***  (opcode == 103)_1     -                             
+
+----------------Focused Condition View-------------------
+Line       144 Item    1  ((opcode == 99) && branch_taken)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (opcode == 99)         Y
+    branch_taken         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (opcode == 99)_0      -                             
+  Row   2:          1  (opcode == 99)_1      branch_taken                  
+  Row   3:    ***0***  branch_taken_0        (opcode == 99)                
+  Row   4:          1  branch_taken_1        (opcode == 99)                
+
+----------------Focused Condition View-------------------
+Line       177 Item    1  (wb_enable && (rd != 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                     18         7        11    38.88%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_soc_top/dut/processor --
+
+  File rv32i_core.sv
+----------------Focused Expression View-----------------
+Line       77 Item    1  ((opcode == 51) || (opcode == 19))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+-----------Focused Expression View (Bimodal)------------
+Line       83 Item    1  ((opcode == 51)? funct7[5]: ((funct3 == 5)? instr[30]: 1'b0))
+Expression totals: 0 of 4 input terms covered = 0.00%
+
+        Input Term   Covered  Reason for no coverage                  Hint
+       -----------  --------  --------------------------------------  --------------
+    (opcode == 51)         N  Both rows hit for same output ->0      Hit either row for output ->1
+         funct7[5]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+     (funct3 == 5)         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+         instr[30]         N  No hits                                Hit '_0' and '_1' for different outputs
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  (opcode == 51)_0      -                                  
+ Row   2:           1           0  (opcode == 51)_1      -                                  
+ Row   3:           1           0  funct7[5]_0           (opcode == 51)                     
+ Row   4:           0           0  funct7[5]_1           (opcode == 51)                     
+ Row   5:           1           0  (funct3 == 5)_0       ~(opcode == 51)                    
+ Row   6:           0           0  (funct3 == 5)_1       (~(opcode == 51) && instr[30])     
+ Row   7:           0           0  instr[30]_0           (~(opcode == 51) && (funct3 == 5)) 
+ Row   8:           0           0  instr[30]_1           (~(opcode == 51) && (funct3 == 5)) 
+
+----------------Focused Expression View-----------------
+Line       106 Item    1  (rdata1 == rdata2)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       107 Item    1  (rdata1 != rdata2)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (rdata1 != rdata2)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (rdata1 != rdata2)_0  -                             
+  Row   2:    ***0***  (rdata1 != rdata2)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       108 Item    1  (rdata1 < rdata2)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (rdata1 < rdata2)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (rdata1 < rdata2)_0   -                             
+  Row   2:    ***0***  (rdata1 < rdata2)_1   -                             
+
+----------------Focused Expression View-----------------
+Line       109 Item    1  (rdata1 >= rdata2)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (rdata1 >= rdata2)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (rdata1 >= rdata2)_0  -                             
+  Row   2:    ***0***  (rdata1 >= rdata2)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       110 Item    1  (rdata1 < rdata2)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (rdata1 < rdata2)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (rdata1 < rdata2)_0   -                             
+  Row   2:    ***0***  (rdata1 < rdata2)_1   -                             
+
+----------------Focused Expression View-----------------
+Line       111 Item    1  (rdata1 >= rdata2)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (rdata1 >= rdata2)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (rdata1 >= rdata2)_0  -                             
+  Row   2:    ***0***  (rdata1 >= rdata2)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       121 Item    1  ((opcode == 3) && (funct3 == 2))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  (opcode == 3)         Y
+  (funct3 == 2)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (opcode == 3)_0       -                             
+  Row   2:          1  (opcode == 3)_1       (funct3 == 2)                 
+  Row   3:    ***0***  (funct3 == 2)_0       (opcode == 3)                 
+  Row   4:          1  (funct3 == 2)_1       (opcode == 3)                 
+
+----------------Focused Expression View-----------------
+Line       122 Item    1  ((opcode == 35) && (funct3 == 2))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (opcode == 35)         Y
+   (funct3 == 2)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (opcode == 35)_0      -                             
+  Row   2:          1  (opcode == 35)_1      (funct3 == 2)                 
+  Row   3:    ***0***  (funct3 == 2)_0       (opcode == 35)                
+  Row   4:          1  (funct3 == 2)_1       (opcode == 35)                
+
+----------------Focused Expression View-----------------
+Line       123 Item    1  (is_load_word || is_store_word)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      74        56        18    75.67%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/processor --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File rv32i_core.sv
+    40              1                         22     
+    41              1                         14     
+    42              1                         16     
+    43              1                         28     
+    44              1                         17     
+    45              1                         25     
+    60              1                         27     
+    61              1                         28     
+    62              1                         28     
+    63              1                         28     
+    64              1                         28     
+    68              1                         34     
+    69              1                         42     
+    77              1                         22     
+    78              1                         47     
+    83              1                         23     
+    87              1                         28     
+    89              1                         18     
+    90              1                    ***0***     
+    91              1                          9     
+    92              1                    ***0***     
+    93              1                    ***0***     
+    94              1                    ***0***     
+    96              1                    ***0***     
+    97              1                    ***0***     
+    98              1                          1     
+    104             1                         23     
+    106             1                         13     
+    107             1                    ***0***     
+    108             1                    ***0***     
+    109             1                    ***0***     
+    110             1                    ***0***     
+    111             1                    ***0***     
+    112             1                         10     
+    121             1                         22     
+    122             1                         22     
+    123             1                         17     
+    125             1                         28     
+    126             1                         28     
+    127             1                         28     
+    128             1                         28     
+    129             1                          3     
+    131             1                          6     
+    132             1                          6     
+    138             1                         56     
+    139             1                         56     
+    141             1                          2     
+    143             1                    ***0***     
+    145             1                          2     
+    148             1                         38     
+    149             1                          2     
+    150             1                         27     
+    156             1                         67     
+    157             1                         67     
+    158             1                         67     
+    160             1                    ***0***     
+    160             2                    ***0***     
+    161             1                    ***0***     
+    161             2                    ***0***     
+    162             1                          2     
+    162             2                          2     
+    163             1                    ***0***     
+    163             2                    ***0***     
+    164             1                          3     
+    164             2                          3     
+    165             1                         33     
+    165             2                         33     
+    166             1                          9     
+    166             2                          9     
+    171             1                         38     
+    173             1                          2     
+    173             2                         62     
+    174             1                         62     
+    178             1                         18     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/bus_matrix
+=== Design Unit: work.amba_interconnect
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        33        28         5    84.84%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/bus_matrix
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File amba_interconnect.sv
+------------------------------------IF Branch------------------------------------
+    41                                        36     Count coming in to IF
+    41              1                          2     
+    42              1                         34     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    56                                        62     Count coming in to CASE
+    57              1                         41     
+    65              1                          8     
+    84              1                          5     
+    93              1                          5     
+                                               3     All False Count
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                        41     Count coming in to IF
+    58              1                         24     
+                                              17     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    60                                        24     Count coming in to IF
+    60              1                         14     
+                                              10     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                        24     Count coming in to IF
+    61              1                         10     
+                                              14     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                         8     Count coming in to IF
+    67              1                          2     
+    73              1                          6     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                         2     Count coming in to IF
+    69              1                          1     
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                         6     Count coming in to IF
+    75              1                          3     
+                                               3     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    86                                         5     Count coming in to IF
+    86              1                          3     
+    87              1                          1     
+    88              1                          1     
+                                         ***0***     All False Count
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    97                                         5     Count coming in to IF
+    97              1                          3     
+    105             1                          1     
+    113             1                          1     
+    121             1                    ***0***     
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    99                                         3     Count coming in to IF
+    99              1                          3     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    107                                        1     Count coming in to IF
+    107             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    115                                        1     Count coming in to IF
+    115             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      8         7         1    87.50%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_soc_top/dut/bus_matrix --
+
+  File amba_interconnect.sv
+----------------Focused Expression View-----------------
+Line       34 Item    1  (cpu_addr < 256)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       35 Item    1  (cpu_addr >= 256)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       36 Item    1  ((cpu_addr >= 256) && (cpu_addr < 512))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       37 Item    1  ((cpu_addr >= 512) && (cpu_addr < 768))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       38 Item    1  ((cpu_addr >= 768) && (cpu_addr < 1024))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (cpu_addr >= 768)         Y
+  (cpu_addr < 1024)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (cpu_addr >= 768)_0   -                             
+  Row   2:          1  (cpu_addr >= 768)_1   (cpu_addr < 1024)             
+  Row   3:    ***0***  (cpu_addr < 1024)_0   (cpu_addr >= 768)             
+  Row   4:          1  (cpu_addr < 1024)_1   (cpu_addr >= 768)             
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       4         4         0   100.00%
+    FSM Transitions                  6         5         1    83.33%
+
+================================FSM Details================================
+
+FSM Coverage for instance /tb_soc_top/dut/bus_matrix --
+
+FSM_ID: state
+    Current State Object : state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  57                IDLE                   0
+  84           APB_SETUP                   2
+  65            AXI_WAIT                   1
+  93          APB_ACCESS                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    IDLE                  18          
+               APB_SETUP                   5          
+                AXI_WAIT                   8          
+              APB_ACCESS                   5          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  61                   0                   5          IDLE -> APB_SETUP             
+  60                   1                   4          IDLE -> AXI_WAIT              
+  89                   2                   5          APB_SETUP -> APB_ACCESS          
+  78                   4                   4          AXI_WAIT -> IDLE              
+ 123                   5                   5          APB_ACCESS -> IDLE            
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  41                   3          APB_SETUP -> IDLE   
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              6         5         1    83.33%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      62        60         2    96.77%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/bus_matrix --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File amba_interconnect.sv
+    34              1                         12     
+    35              1                         12     
+    36              1                         12     
+    37              1                         12     
+    38              1                         12     
+    40              1                         36     
+    41              1                          2     
+    42              1                         34     
+    45              1                         62     
+    46              1                         62     
+    47              1                         62     
+    48              1                         62     
+    50              1                         62     
+    50              2                         62     
+    50              3                         62     
+    50              4                         62     
+    50              5                         62     
+    51              1                         62     
+    51              2                         62     
+    51              3                         62     
+    53              1                         62     
+    53              2                         62     
+    53              3                         62     
+    53              4                         62     
+    54              1                         62     
+    54              2                         62     
+    54              3                         62     
+    59              1                         24     
+    60              1                         14     
+    61              1                         10     
+    66              1                          8     
+    68              1                          2     
+    68              2                          2     
+    68              3                          2     
+    70              1                          1     
+    71              1                          1     
+    74              1                          6     
+    74              2                          6     
+    76              1                          3     
+    77              1                          3     
+    78              1                          3     
+    85              1                          5     
+    86              1                          3     
+    87              1                          1     
+    88              1                          1     
+    89              1                          5     
+    94              1                          5     
+    95              1                          5     
+    98              1                          3     
+    100             1                          3     
+    101             1                          3     
+    102             1                          3     
+    106             1                          1     
+    108             1                          1     
+    109             1                          1     
+    110             1                          1     
+    114             1                          1     
+    116             1                          1     
+    117             1                          1     
+    118             1                          1     
+    122             1                    ***0***     
+    123             1                    ***0***     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/axi_sram
+=== Design Unit: work.axi_ecc_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/axi_sram
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_ecc_memory.sv
+------------------------------------IF Branch------------------------------------
+    39                                        35     Count coming in to IF
+    39              1                          2     
+    49              1                         33     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    53                                        33     Count coming in to IF
+    53              1                          1     
+    59              1                          1     
+                                              31     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                        33     Count coming in to IF
+    64              1                          3     
+    67              1                          3     
+    72              1                          3     
+                                              24     All False Count
+Branch totals: 4 hits of 4 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       9         6         3    66.66%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top/dut/axi_sram --
+
+  File axi_ecc_memory.sv
+----------------Focused Condition View-------------------
+Line       53 Item    1  ((awvalid && wvalid) && ~bvalid)
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     awvalid         Y
+      wvalid         N  '_0' not hit             Hit '_0'
+      bvalid         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  awvalid_0             -                             
+  Row   2:          1  awvalid_1             (~bvalid && wvalid)           
+  Row   3:    ***0***  wvalid_0              awvalid                       
+  Row   4:          1  wvalid_1              (~bvalid && awvalid)          
+  Row   5:          1  bvalid_0              (awvalid && wvalid)           
+  Row   6:          1  bvalid_1              (awvalid && wvalid)           
+
+----------------Focused Condition View-------------------
+Line       59 Item    1  (bready && bvalid)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      bready         Y
+      bvalid         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  bready_0              -                             
+  Row   2:          1  bready_1              bvalid                        
+  Row   3:    ***0***  bvalid_0              bready                        
+  Row   4:          1  bvalid_1              bready                        
+
+----------------Focused Condition View-------------------
+Line       64 Item    1  (arvalid && arready)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       72 Item    1  (rready && rvalid)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      rready         Y
+      rvalid         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rready_0              -                             
+  Row   2:          1  rready_1              rvalid                        
+  Row   3:    ***0***  rvalid_0              rready                        
+  Row   4:          1  rvalid_1              rready                        
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      9         7         2    77.77%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_soc_top/dut/axi_sram --
+
+  File axi_ecc_memory.sv
+----------------Focused Expression View-----------------
+Line       34 Item    1  ((awvalid && wvalid) && ~bvalid)
+Expression totals: 2 of 3 input terms covered = 66.66%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     awvalid         Y
+      wvalid         N  '_0' not hit             Hit '_0'
+      bvalid         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  awvalid_0             -                             
+  Row   2:          1  awvalid_1             (~bvalid && wvalid)           
+  Row   3:    ***0***  wvalid_0              awvalid                       
+  Row   4:          1  wvalid_1              (~bvalid && awvalid)          
+  Row   5:          1  bvalid_0              (awvalid && wvalid)           
+  Row   6:          1  bvalid_1              (awvalid && wvalid)           
+
+----------------Focused Expression View-----------------
+Line       35 Item    1  ((awvalid && wvalid) && ~bvalid)
+Expression totals: 2 of 3 input terms covered = 66.66%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     awvalid         Y
+      wvalid         N  '_0' not hit             Hit '_0'
+      bvalid         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  awvalid_0             -                             
+  Row   2:          1  awvalid_1             (~bvalid && wvalid)           
+  Row   3:    ***0***  wvalid_0              awvalid                       
+  Row   4:          1  wvalid_1              (~bvalid && awvalid)          
+  Row   5:          1  bvalid_0              (awvalid && wvalid)           
+  Row   6:          1  bvalid_1              (awvalid && wvalid)           
+
+----------------Focused Expression View-----------------
+Line       36 Item    1  ((arvalid && ~rvalid) && ~read_pending)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      27        27         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/axi_sram --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_ecc_memory.sv
+    34              1                          7     
+    35              1                          7     
+    36              1                         18     
+    38              1                         35     
+    40              1                          2     
+    41              1                          2     
+    42              1                          2     
+    43              1                          2     
+    44              1                          2     
+    45              1                          2     
+    46              1                          2     
+    47              1                          2     
+    48              1                          2     
+    50              1                         33     
+    54              1                          1     
+    55              1                          1     
+    56              1                          1     
+    57              1                          1     
+    58              1                          1     
+    60              1                          1     
+    65              1                          3     
+    66              1                          3     
+    68              1                          3     
+    69              1                          3     
+    70              1                          3     
+    71              1                          3     
+    73              1                          3     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/apb_regs
+=== Design Unit: work.apb_ecc_registers
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        12         5         7    41.66%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/apb_regs
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_ecc_registers.sv
+------------------------------------IF Branch------------------------------------
+    24                                        30     Count coming in to IF
+    24              1                          2     
+    27              1                          3     
+                                              25     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                         3     Count coming in to IF
+    28              1                          3     
+    30              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 3 branches = 33.33%
+
+------------------------------------IF Branch------------------------------------
+    37                                        25     Count coming in to IF
+    37              1                    ***0***     
+                                              25     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------CASE Branch------------------------------------
+    38                                   ***0***     Count coming in to CASE
+    39              1                    ***0***     
+    40              1                    ***0***     
+    41              1                    ***0***     
+    42              1                    ***0***     
+Branch totals: 0 hits of 4 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       7         2         5    28.57%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top/dut/apb_regs --
+
+  File apb_ecc_registers.sv
+----------------Focused Condition View-------------------
+Line       27 Item    1  ((psel && penable) && pwrite)
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        psel         Y
+     penable         Y
+      pwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:          1  psel_1                (pwrite && penable)           
+  Row   3:          1  penable_0             psel                          
+  Row   4:          1  penable_1             (pwrite && psel)              
+  Row   5:    ***0***  pwrite_0              (psel && penable)             
+  Row   6:          1  pwrite_1              (psel && penable)             
+
+----------------Focused Condition View-------------------
+Line       28 Item    1  (paddr == 256)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 256)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 256)_0      -                             
+  Row   2:          1  (paddr == 256)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       30 Item    1  (paddr == 272)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 272)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 272)_0      -                             
+  Row   2:    ***0***  (paddr == 272)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       37 Item    1  (psel && ~pwrite)
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        psel         N  '_1' not hit             Hit '_1'
+      pwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:    ***0***  psel_1                ~pwrite                       
+  Row   3:    ***0***  pwrite_0              psel                          
+  Row   4:          1  pwrite_1              psel                          
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      10         5         5    50.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/apb_regs --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_ecc_registers.sv
+    23              1                         30     
+    25              1                          2     
+    29              1                          3     
+    31              1                    ***0***     
+    35              1                         25     
+    36              1                         25     
+    39              1                    ***0***     
+    40              1                    ***0***     
+    41              1                    ***0***     
+    42              1                    ***0***     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/motor_ctrl
+=== Design Unit: work.apb_motor_ctrl
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        42        18        24    42.85%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/motor_ctrl
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_motor_ctrl.sv
+------------------------------------IF Branch------------------------------------
+    37                                         2     Count coming in to IF
+    37              1                    ***0***     
+    37              2                          2     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                        25     Count coming in to IF
+    49              1                          3     
+    55              1                          1     
+    69              1                    ***0***     
+                                              21     All False Count
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                         1     Count coming in to IF
+    56              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                         1     Count coming in to IF
+    58              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                         1     Count coming in to IF
+    61              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                         1     Count coming in to IF
+    65              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                        25     Count coming in to IF
+    74              1                    ***0***     
+    85              1                         24     
+                                               1     All False Count
+Branch totals: 2 hits of 3 branches = 66.66%
+
+------------------------------------IF Branch------------------------------------
+    75                                   ***0***     Count coming in to IF
+    75              1                    ***0***     
+    82              1                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    77                                   ***0***     Count coming in to IF
+    77              1                    ***0***     
+    79              1                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    92                                        19     Count coming in to IF
+    92              1                    ***0***     
+                                              19     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                   ***0***     Count coming in to IF
+    93              1                    ***0***     
+    94              1                    ***0***     
+    95              1                    ***0***     
+    96              1                    ***0***     
+    98              1                    ***0***     
+    99              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 7 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    105                                       51     Count coming in to IF
+    105             1                          3     
+    106             1                         48     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    110                                       48     Count coming in to IF
+    110             1                    ***0***     
+    110             2                         48     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    122                                       51     Count coming in to IF
+    122             1                          3     
+    127             1                         48     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    130                                       48     Count coming in to IF
+    130             1                    ***0***     
+                                              48     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    132                                       48     Count coming in to IF
+    132             1                    ***0***     
+    141             1                         48     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    138                                  ***0***     Count coming in to IF
+    138             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      29         2        27     6.89%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top/dut/motor_ctrl --
+
+  File apb_motor_ctrl.sv
+----------------Focused Condition View-------------------
+Line       55 Item    1  ((psel && penable) && pwrite)
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        psel         Y
+     penable         Y
+      pwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:          1  psel_1                (pwrite && penable)           
+  Row   3:          1  penable_0             psel                          
+  Row   4:          1  penable_1             (pwrite && psel)              
+  Row   5:    ***0***  pwrite_0              (psel && penable)             
+  Row   6:          1  pwrite_1              (psel && penable)             
+
+----------------Focused Condition View-------------------
+Line       56 Item    1  (paddr == 512)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 512)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 512)_0      -                             
+  Row   2:          1  (paddr == 512)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       58 Item    1  ((paddr == 520) && pwdata[0])
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 520)         N  '_1' not hit             Hit '_1'
+       pwdata[0]         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (paddr == 520)_0      -                             
+  Row   2:    ***0***  (paddr == 520)_1      pwdata[0]                     
+  Row   3:    ***0***  pwdata[0]_0           (paddr == 520)                
+  Row   4:    ***0***  pwdata[0]_1           (paddr == 520)                
+
+----------------Focused Condition View-------------------
+Line       61 Item    1  (((paddr >= 528) && (paddr <= 556)) && (paddr[1:0] == 0))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+     (paddr >= 528)         N  '_1' not hit             Hit '_1'
+     (paddr <= 556)         N  No hits                  Hit '_0' and '_1'
+  (paddr[1:0] == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (paddr >= 528)_0      -                             
+  Row   2:    ***0***  (paddr >= 528)_1      ((paddr[1:0] == 0) && (paddr <= 556))
+  Row   3:    ***0***  (paddr <= 556)_0      (paddr >= 528)                
+  Row   4:    ***0***  (paddr <= 556)_1      ((paddr[1:0] == 0) && (paddr >= 528))
+  Row   5:    ***0***  (paddr[1:0] == 0)_0   ((paddr >= 528) && (paddr <= 556))
+  Row   6:    ***0***  (paddr[1:0] == 0)_1   ((paddr >= 528) && (paddr <= 556))
+
+----------------Focused Condition View-------------------
+Line       65 Item    1  (((paddr == 560) && pwdata[0]) && ~profile_running)
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+   (paddr == 560)         N  '_1' not hit             Hit '_1'
+        pwdata[0]         N  No hits                  Hit '_0' and '_1'
+  profile_running         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (paddr == 560)_0      -                             
+  Row   2:    ***0***  (paddr == 560)_1      (~profile_running && pwdata[0])
+  Row   3:    ***0***  pwdata[0]_0           (paddr == 560)                
+  Row   4:    ***0***  pwdata[0]_1           (~profile_running && (paddr == 560))
+  Row   5:    ***0***  profile_running_0     ((paddr == 560) && pwdata[0]) 
+  Row   6:    ***0***  profile_running_1     ((paddr == 560) && pwdata[0]) 
+
+----------------Focused Condition View-------------------
+Line       74 Item    1  (presetn && profile_running)
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+          presetn         N  '_1' not hit             Hit '_1'
+  profile_running         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  presetn_0             -                             
+  Row   2:    ***0***  presetn_1             profile_running               
+  Row   3:          1  profile_running_0     presetn                       
+  Row   4:    ***0***  profile_running_1     presetn                       
+
+----------------Focused Condition View-------------------
+Line       75 Item    1  (profile_step_timer == 200000)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+  (profile_step_timer == 200000)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:    ***0***  (profile_step_timer == 200000)_0  -                             
+  Row   2:    ***0***  (profile_step_timer == 200000)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       77 Item    1  (profile_index == 7)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (profile_index == 7)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (profile_index == 7)_0  -                             
+  Row   2:    ***0***  (profile_index == 7)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       92 Item    1  (psel && ~pwrite)
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        psel         N  '_1' not hit             Hit '_1'
+      pwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:    ***0***  psel_1                ~pwrite                       
+  Row   3:    ***0***  pwrite_0              psel                          
+  Row   4:          1  pwrite_1              psel                          
+
+----------------Focused Condition View-------------------
+Line       93 Item    1  (paddr == 512)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 512)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 512)_0      -                             
+  Row   2:    ***0***  (paddr == 512)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       94 Item    1  (paddr == 516)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 516)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 516)_0      -                             
+  Row   2:    ***0***  (paddr == 516)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       95 Item    1  (paddr == 520)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 520)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 520)_0      -                             
+  Row   2:    ***0***  (paddr == 520)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       96 Item    1  (((paddr >= 528) && (paddr <= 556)) && (paddr[1:0] == 0))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+     (paddr >= 528)         N  No hits                  Hit '_0' and '_1'
+     (paddr <= 556)         N  No hits                  Hit '_0' and '_1'
+  (paddr[1:0] == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr >= 528)_0      -                             
+  Row   2:    ***0***  (paddr >= 528)_1      ((paddr[1:0] == 0) && (paddr <= 556))
+  Row   3:    ***0***  (paddr <= 556)_0      (paddr >= 528)                
+  Row   4:    ***0***  (paddr <= 556)_1      ((paddr[1:0] == 0) && (paddr >= 528))
+  Row   5:    ***0***  (paddr[1:0] == 0)_0   ((paddr >= 528) && (paddr <= 556))
+  Row   6:    ***0***  (paddr[1:0] == 0)_1   ((paddr >= 528) && (paddr <= 556))
+
+----------------Focused Condition View-------------------
+Line       98 Item    1  (paddr == 560)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 560)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 560)_0      -                             
+  Row   2:    ***0***  (paddr == 560)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       99 Item    1  (paddr == 564)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 564)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 564)_0      -                             
+  Row   2:    ***0***  (paddr == 564)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       132 Item    1  (window_timer == 1000000)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (window_timer == 1000000)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          1  (window_timer == 1000000)_0  -                             
+  Row   2:    ***0***  (window_timer == 1000000)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       138 Item    1  ((effective_duty > 10) && (edge_counter == 0))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+  (effective_duty > 10)         N  No hits                  Hit '_0' and '_1'
+    (edge_counter == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:    ***0***  (effective_duty > 10)_0  -                             
+  Row   2:    ***0***  (effective_duty > 10)_1  (edge_counter == 0)           
+  Row   3:    ***0***  (edge_counter == 0)_0    (effective_duty > 10)         
+  Row   4:    ***0***  (edge_counter == 0)_1    (effective_duty > 10)         
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         1         3    25.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_soc_top/dut/motor_ctrl --
+
+  File apb_motor_ctrl.sv
+----------------Focused Expression View-----------------
+Line       110 Item    1  (stall_flag? 1'b0: (pwm_counter < effective_duty))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+                      stall_flag         N  '_1' not hit             Hit '_1'
+  (pwm_counter < effective_duty)         Y
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:          1  stall_flag_0                      (pwm_counter < effective_duty)
+  Row   2:    ***0***  stall_flag_1                      -                             
+  Row   3:          1  (pwm_counter < effective_duty)_0  ~stall_flag                   
+  Row   4:          1  (pwm_counter < effective_duty)_1  ~stall_flag                   
+
+----------------Focused Expression View-----------------
+Line       119 Item    1  (tacho_sync1 & ~tacho_sync2)
+Expression totals: 0 of 2 input terms covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  tacho_sync1         N  '_1' not hit             Hit '_1'
+  tacho_sync2         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  tacho_sync1_0         ~tacho_sync2                  
+  Row   2:    ***0***  tacho_sync1_1         ~tacho_sync2                  
+  Row   3:    ***0***  tacho_sync2_0         tacho_sync1                   
+  Row   4:    ***0***  tacho_sync2_1         tacho_sync1                   
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      48        28        20    58.33%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/motor_ctrl --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_motor_ctrl.sv
+    37              1                          3     
+    48              1                         25     
+    50              1                          3     
+    51              1                          3     
+    52              1                          3     
+    53              1                          3     
+    54              1                          3     
+    54              2                         24     
+    54              3                         24     
+    56              1                          1     
+    58              1                    ***0***     
+    62              1                    ***0***     
+    66              1                    ***0***     
+    67              1                    ***0***     
+    70              1                    ***0***     
+    76              1                    ***0***     
+    78              1                    ***0***     
+    80              1                    ***0***     
+    83              1                    ***0***     
+    86              1                         24     
+    90              1                         19     
+    91              1                         19     
+    93              1                    ***0***     
+    94              1                    ***0***     
+    95              1                    ***0***     
+    97              1                    ***0***     
+    98              1                    ***0***     
+    99              1                    ***0***     
+    104             1                         51     
+    105             1                          3     
+    106             1                         48     
+    110             1                         49     
+    115             1                          3     
+    116             1                          3     
+    117             1                          3     
+    119             1                          3     
+    121             1                         51     
+    123             1                          3     
+    124             1                          3     
+    125             1                          3     
+    126             1                          3     
+    128             1                         48     
+    130             1                    ***0***     
+    133             1                    ***0***     
+    134             1                    ***0***     
+    135             1                    ***0***     
+    139             1                    ***0***     
+    142             1                         48     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/spi_master
+=== Design Unit: work.apb_spi_master
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        17        12         5    70.58%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/spi_master
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_spi_master.sv
+------------------------------------IF Branch------------------------------------
+    27                                        47     Count coming in to IF
+    27              1                          2     
+    35              1                         45     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    37                                        45     Count coming in to IF
+    37              1                          1     
+                                              44     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    45                                        45     Count coming in to IF
+    45              1                         38     
+    68              1                          7     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                        38     Count coming in to IF
+    49              1                          2     
+                                              36     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    53                                         2     Count coming in to IF
+    53              1                          1     
+    57              1                          1     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                         1     Count coming in to IF
+    58              1                    ***0***     
+    62              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    81                                        19     Count coming in to IF
+    81              1                    ***0***     
+                                              19     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------CASE Branch------------------------------------
+    82                                   ***0***     Count coming in to CASE
+    83              1                    ***0***     
+    84              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 3 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       9         3         6    33.33%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top/dut/spi_master --
+
+  File apb_spi_master.sv
+----------------Focused Condition View-------------------
+Line       37 Item    1  ((((psel && penable) && pwrite) && (paddr == 768)) && ~busy)
+Condition totals: 2 of 5 input terms covered = 40.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+            psel         Y
+         penable         Y
+          pwrite         N  '_0' not hit             Hit '_0'
+  (paddr == 768)         N  '_0' not hit             Hit '_0'
+            busy         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:          1  psel_1                (~busy && (paddr == 768) && pwrite && penable)
+  Row   3:          1  penable_0             psel                          
+  Row   4:          1  penable_1             (~busy && (paddr == 768) && pwrite && psel)
+  Row   5:    ***0***  pwrite_0              (psel && penable)             
+  Row   6:          1  pwrite_1              (~busy && (paddr == 768) && (psel && penable))
+  Row   7:    ***0***  (paddr == 768)_0      ((psel && penable) && pwrite) 
+  Row   8:          1  (paddr == 768)_1      (~busy && ((psel && penable) && pwrite))
+  Row   9:          1  busy_0                (((psel && penable) && pwrite) && (paddr == 768))
+ Row   10:    ***0***  busy_1                (((psel && penable) && pwrite) && (paddr == 768))
+
+----------------Focused Condition View-------------------
+Line       49 Item    1  (clk_div == 7)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       58 Item    1  (bit_cnt == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (bit_cnt == 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (bit_cnt == 0)_0      -                             
+  Row   2:    ***0***  (bit_cnt == 0)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       81 Item    1  (psel && ~pwrite)
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        psel         N  '_1' not hit             Hit '_1'
+      pwrite         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:    ***0***  psel_1                ~pwrite                       
+  Row   3:    ***0***  pwrite_0              psel                          
+  Row   4:          1  pwrite_1              psel                          
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      26        21         5    80.76%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/spi_master --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_spi_master.sv
+    26              1                         47     
+    28              1                          2     
+    29              1                          2     
+    30              1                          2     
+    31              1                          2     
+    32              1                          2     
+    33              1                          2     
+    34              1                          2     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+    41              1                          1     
+    46              1                         38     
+    50              1                          2     
+    54              1                          1     
+    59              1                    ***0***     
+    60              1                    ***0***     
+    61              1                    ***0***     
+    63              1                          1     
+    64              1                          1     
+    69              1                          7     
+    70              1                          7     
+    79              1                         19     
+    80              1                         19     
+    83              1                    ***0***     
+    84              1                    ***0***     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/enc
+=== Design Unit: work.ecc_encoder
+=================================================================================
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                     90         3        87     3.33%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_soc_top/dut/enc --
+
+  File ecc_encoder.sv
+-----------Focused Expression View (Bimodal)------------
+Line       24 Item    1  (((c[3] ^ c[5]) ^ (((c[7] ^ c[9]) ^ (c[11] ^ c[13])) ^ ((c[15] ^ c[17]) ^ (c[19] ^ c[21])))) ^ (((c[23] ^ c[25]) ^ (c[27] ^ c[29])) ^ ((c[31] ^ c[33]) ^ (c[35] ^ c[37]))))
+Expression totals: 3 of 18 input terms covered = 16.66%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[3]         Y
+        c[5]         Y
+        c[7]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+        c[9]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[11]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[13]         Y
+       c[15]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[17]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[19]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[21]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[23]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[25]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[27]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[29]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[31]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[33]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[35]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[37]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[3]_0                -                                  
+ Row   2:           0           1  c[3]_1                -                                  
+ Row   3:           1           0  c[5]_0                -                                  
+ Row   4:           0           1  c[5]_1                -                                  
+ Row   5:           1           1  c[7]_0                -                                  
+ Row   6:           0           0  c[7]_1                -                                  
+ Row   7:           1           1  c[9]_0                -                                  
+ Row   8:           0           0  c[9]_1                -                                  
+ Row   9:           1           1  c[11]_0               -                                  
+Row   10:           0           0  c[11]_1               -                                  
+Row   11:           1           0  c[13]_0               -                                  
+Row   12:           0           1  c[13]_1               -                                  
+Row   13:           1           1  c[15]_0               -                                  
+Row   14:           0           0  c[15]_1               -                                  
+Row   15:           1           1  c[17]_0               -                                  
+Row   16:           0           0  c[17]_1               -                                  
+Row   17:           1           1  c[19]_0               -                                  
+Row   18:           0           0  c[19]_1               -                                  
+Row   19:           1           1  c[21]_0               -                                  
+Row   20:           0           0  c[21]_1               -                                  
+Row   21:           1           1  c[23]_0               -                                  
+Row   22:           0           0  c[23]_1               -                                  
+Row   23:           1           1  c[25]_0               -                                  
+Row   24:           0           0  c[25]_1               -                                  
+Row   25:           1           1  c[27]_0               -                                  
+Row   26:           0           0  c[27]_1               -                                  
+Row   27:           1           1  c[29]_0               -                                  
+Row   28:           0           0  c[29]_1               -                                  
+Row   29:           1           1  c[31]_0               -                                  
+Row   30:           0           0  c[31]_1               -                                  
+Row   31:           1           1  c[33]_0               -                                  
+Row   32:           0           0  c[33]_1               -                                  
+Row   33:           1           1  c[35]_0               -                                  
+Row   34:           0           0  c[35]_1               -                                  
+Row   35:           1           1  c[37]_0               -                                  
+Row   36:           0           0  c[37]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       25 Item    1  (((c[3] ^ c[6]) ^ (((c[7] ^ c[10]) ^ (c[11] ^ c[14])) ^ ((c[15] ^ c[18]) ^ (c[19] ^ c[22])))) ^ (((c[23] ^ c[26]) ^ (c[27] ^ c[30])) ^ ((c[31] ^ c[34]) ^ (c[35] ^ c[38]))))
+Expression totals: 0 of 18 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[3]         N  Both rows hit for same output ->0      Hit either row for output ->1
+        c[6]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[7]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[10]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[11]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[14]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[15]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[18]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[19]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[22]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[23]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[26]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[27]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[34]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[35]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[38]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[3]_0                -                                  
+ Row   2:           1           0  c[3]_1                -                                  
+ Row   3:           1           0  c[6]_0                -                                  
+ Row   4:           0           0  c[6]_1                -                                  
+ Row   5:           1           0  c[7]_0                -                                  
+ Row   6:           0           0  c[7]_1                -                                  
+ Row   7:           1           0  c[10]_0               -                                  
+ Row   8:           1           0  c[10]_1               -                                  
+ Row   9:           1           0  c[11]_0               -                                  
+Row   10:           0           0  c[11]_1               -                                  
+Row   11:           1           0  c[14]_0               -                                  
+Row   12:           0           0  c[14]_1               -                                  
+Row   13:           1           0  c[15]_0               -                                  
+Row   14:           0           0  c[15]_1               -                                  
+Row   15:           1           0  c[18]_0               -                                  
+Row   16:           0           0  c[18]_1               -                                  
+Row   17:           1           0  c[19]_0               -                                  
+Row   18:           0           0  c[19]_1               -                                  
+Row   19:           1           0  c[22]_0               -                                  
+Row   20:           0           0  c[22]_1               -                                  
+Row   21:           1           0  c[23]_0               -                                  
+Row   22:           0           0  c[23]_1               -                                  
+Row   23:           1           0  c[26]_0               -                                  
+Row   24:           0           0  c[26]_1               -                                  
+Row   25:           1           0  c[27]_0               -                                  
+Row   26:           0           0  c[27]_1               -                                  
+Row   27:           1           0  c[30]_0               -                                  
+Row   28:           0           0  c[30]_1               -                                  
+Row   29:           1           0  c[31]_0               -                                  
+Row   30:           0           0  c[31]_1               -                                  
+Row   31:           1           0  c[34]_0               -                                  
+Row   32:           0           0  c[34]_1               -                                  
+Row   33:           1           0  c[35]_0               -                                  
+Row   34:           0           0  c[35]_1               -                                  
+Row   35:           1           0  c[38]_0               -                                  
+Row   36:           0           0  c[38]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       26 Item    1  (((c[5] ^ c[6]) ^ (((c[7] ^ c[12]) ^ (c[13] ^ c[14])) ^ ((c[15] ^ c[20]) ^ (c[21] ^ c[22])))) ^ (((c[23] ^ c[28]) ^ (c[29] ^ c[30])) ^ ((c[31] ^ c[36]) ^ (c[37] ^ c[38]))))
+Expression totals: 0 of 18 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[5]         N  Both rows hit for same output ->0      Hit either row for output ->1
+        c[6]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[7]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[12]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[13]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[14]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[15]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[20]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[21]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[22]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[23]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[28]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[29]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[36]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[37]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[38]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[5]_0                -                                  
+ Row   2:           1           0  c[5]_1                -                                  
+ Row   3:           1           0  c[6]_0                -                                  
+ Row   4:           0           0  c[6]_1                -                                  
+ Row   5:           1           0  c[7]_0                -                                  
+ Row   6:           0           0  c[7]_1                -                                  
+ Row   7:           1           0  c[12]_0               -                                  
+ Row   8:           0           0  c[12]_1               -                                  
+ Row   9:           1           0  c[13]_0               -                                  
+Row   10:           1           0  c[13]_1               -                                  
+Row   11:           1           0  c[14]_0               -                                  
+Row   12:           0           0  c[14]_1               -                                  
+Row   13:           1           0  c[15]_0               -                                  
+Row   14:           0           0  c[15]_1               -                                  
+Row   15:           1           0  c[20]_0               -                                  
+Row   16:           0           0  c[20]_1               -                                  
+Row   17:           1           0  c[21]_0               -                                  
+Row   18:           0           0  c[21]_1               -                                  
+Row   19:           1           0  c[22]_0               -                                  
+Row   20:           0           0  c[22]_1               -                                  
+Row   21:           1           0  c[23]_0               -                                  
+Row   22:           0           0  c[23]_1               -                                  
+Row   23:           1           0  c[28]_0               -                                  
+Row   24:           0           0  c[28]_1               -                                  
+Row   25:           1           0  c[29]_0               -                                  
+Row   26:           0           0  c[29]_1               -                                  
+Row   27:           1           0  c[30]_0               -                                  
+Row   28:           0           0  c[30]_1               -                                  
+Row   29:           1           0  c[31]_0               -                                  
+Row   30:           0           0  c[31]_1               -                                  
+Row   31:           1           0  c[36]_0               -                                  
+Row   32:           0           0  c[36]_1               -                                  
+Row   33:           1           0  c[37]_0               -                                  
+Row   34:           0           0  c[37]_1               -                                  
+Row   35:           1           0  c[38]_0               -                                  
+Row   36:           0           0  c[38]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       27 Item    1  (((c[9] ^ (c[10] ^ c[11])) ^ ((c[12] ^ c[13]) ^ (c[14] ^ c[15]))) ^ (((c[24] ^ c[25]) ^ (c[26] ^ c[27])) ^ ((c[28] ^ c[29]) ^ (c[30] ^ c[31]))))
+Expression totals: 0 of 15 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[9]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[10]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[11]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[12]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[13]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[14]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[15]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[24]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[25]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[26]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[27]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[28]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[29]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[9]_0                -                                  
+ Row   2:           0           0  c[9]_1                -                                  
+ Row   3:           1           0  c[10]_0               -                                  
+ Row   4:           1           0  c[10]_1               -                                  
+ Row   5:           1           0  c[11]_0               -                                  
+ Row   6:           0           0  c[11]_1               -                                  
+ Row   7:           1           0  c[12]_0               -                                  
+ Row   8:           0           0  c[12]_1               -                                  
+ Row   9:           1           0  c[13]_0               -                                  
+Row   10:           1           0  c[13]_1               -                                  
+Row   11:           1           0  c[14]_0               -                                  
+Row   12:           0           0  c[14]_1               -                                  
+Row   13:           1           0  c[15]_0               -                                  
+Row   14:           0           0  c[15]_1               -                                  
+Row   15:           1           0  c[24]_0               -                                  
+Row   16:           0           0  c[24]_1               -                                  
+Row   17:           1           0  c[25]_0               -                                  
+Row   18:           0           0  c[25]_1               -                                  
+Row   19:           1           0  c[26]_0               -                                  
+Row   20:           0           0  c[26]_1               -                                  
+Row   21:           1           0  c[27]_0               -                                  
+Row   22:           0           0  c[27]_1               -                                  
+Row   23:           1           0  c[28]_0               -                                  
+Row   24:           0           0  c[28]_1               -                                  
+Row   25:           1           0  c[29]_0               -                                  
+Row   26:           0           0  c[29]_1               -                                  
+Row   27:           1           0  c[30]_0               -                                  
+Row   28:           0           0  c[30]_1               -                                  
+Row   29:           1           0  c[31]_0               -                                  
+Row   30:           0           0  c[31]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       28 Item    1  (((c[17] ^ (c[18] ^ c[19])) ^ ((c[20] ^ c[21]) ^ (c[22] ^ c[23]))) ^ (((c[24] ^ c[25]) ^ (c[26] ^ c[27])) ^ ((c[28] ^ c[29]) ^ (c[30] ^ c[31]))))
+Expression totals: 0 of 15 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+       c[17]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[18]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[19]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[20]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[21]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[22]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[23]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[24]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[25]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[26]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[27]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[28]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[29]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[17]_0               -                                  
+ Row   2:           0           0  c[17]_1               -                                  
+ Row   3:           1           0  c[18]_0               -                                  
+ Row   4:           0           0  c[18]_1               -                                  
+ Row   5:           1           0  c[19]_0               -                                  
+ Row   6:           0           0  c[19]_1               -                                  
+ Row   7:           1           0  c[20]_0               -                                  
+ Row   8:           0           0  c[20]_1               -                                  
+ Row   9:           1           0  c[21]_0               -                                  
+Row   10:           0           0  c[21]_1               -                                  
+Row   11:           1           0  c[22]_0               -                                  
+Row   12:           0           0  c[22]_1               -                                  
+Row   13:           1           0  c[23]_0               -                                  
+Row   14:           0           0  c[23]_1               -                                  
+Row   15:           1           0  c[24]_0               -                                  
+Row   16:           0           0  c[24]_1               -                                  
+Row   17:           1           0  c[25]_0               -                                  
+Row   18:           0           0  c[25]_1               -                                  
+Row   19:           1           0  c[26]_0               -                                  
+Row   20:           0           0  c[26]_1               -                                  
+Row   21:           1           0  c[27]_0               -                                  
+Row   22:           0           0  c[27]_1               -                                  
+Row   23:           1           0  c[28]_0               -                                  
+Row   24:           0           0  c[28]_1               -                                  
+Row   25:           1           0  c[29]_0               -                                  
+Row   26:           0           0  c[29]_1               -                                  
+Row   27:           1           0  c[30]_0               -                                  
+Row   28:           0           0  c[30]_1               -                                  
+Row   29:           1           0  c[31]_0               -                                  
+Row   30:           0           0  c[31]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       29 Item    1  (((c[33] ^ c[34]) ^ (c[35] ^ c[36])) ^ (c[37] ^ c[38]))
+Expression totals: 0 of 6 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+       c[33]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[34]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[35]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[36]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[37]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[38]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[33]_0               -                                  
+ Row   2:           0           0  c[33]_1               -                                  
+ Row   3:           1           0  c[34]_0               -                                  
+ Row   4:           0           0  c[34]_1               -                                  
+ Row   5:           1           0  c[35]_0               -                                  
+ Row   6:           0           0  c[35]_1               -                                  
+ Row   7:           1           0  c[36]_0               -                                  
+ Row   8:           0           0  c[36]_1               -                                  
+ Row   9:           1           0  c[37]_0               -                                  
+Row   10:           0           0  c[37]_1               -                                  
+Row   11:           1           0  c[38]_0               -                                  
+Row   12:           0           0  c[38]_1               -                                  
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      42        42         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/enc --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ecc_encoder.sv
+    9               1                          3     
+    11              1                          3     
+    14              1                          3     
+    14              2                          3     
+    14              3                          3     
+    14              4                          3     
+    15              1                          3     
+    15              2                          3     
+    15              3                          3     
+    15              4                          3     
+    16              1                          3     
+    16              2                          3     
+    16              3                          3     
+    16              4                          3     
+    17              1                          3     
+    17              2                          3     
+    17              3                          3     
+    17              4                          3     
+    18              1                          3     
+    18              2                          3     
+    18              3                          3     
+    18              4                          3     
+    19              1                          3     
+    19              2                          3     
+    19              3                          3     
+    19              4                          3     
+    20              1                          3     
+    20              2                          3     
+    20              3                          3     
+    20              4                          3     
+    21              1                          3     
+    21              2                          3     
+    21              3                          3     
+    21              4                          3     
+    24              1                          3     
+    25              1                          3     
+    26              1                          3     
+    27              1                          3     
+    28              1                          3     
+    29              1                          3     
+    32              1                          3     
+    35              1                          3     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/sram
+=== Design Unit: work.sram_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/sram
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File sram_memory.sv
+------------------------------------IF Branch------------------------------------
+    16                                         3     Count coming in to IF
+    16              1                          1     
+                                               2     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       3         3         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/sram --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File sram_memory.sv
+    15              1                          3     
+    16              1                          1     
+    20              1                          3     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/gremlin
+=== Design Unit: work.fault_injector
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/gremlin --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fault_injector.sv
+    7               1                          7     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/dec/ecc_decoder_sva_inst
+=== Design Unit: work.ecc_decoder_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_soc_top/dut/dec/ecc_decoder_sva_inst/#ublk#91378931#8/immed__16
+                     ecc_assertions.sv(16)              0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/dec/ecc_decoder_sva_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ecc_assertions.sv
+------------------------------------IF Branch------------------------------------
+    15                                         5     Count coming in to IF
+    15              1                          4     
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/dec/ecc_decoder_sva_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ecc_assertions.sv
+    8               1                          5     
+
+=================================================================================
+=== Instance: /tb_soc_top/dut/dec
+=== Design Unit: work.ecc_decoder
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         7         4         3    57.14%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top/dut/dec
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ecc_decoder.sv
+------------------------------------IF Branch------------------------------------
+    32                                         6     Count coming in to IF
+    32              1                          1     
+    41              1                          1     
+                                               4     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    33                                         1     Count coming in to IF
+    33              1                    ***0***     
+    38              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    35                                   ***0***     Count coming in to IF
+    35              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         1         1    50.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top/dut/dec --
+
+  File ecc_decoder.sv
+----------------Focused Condition View-------------------
+Line       32 Item    1  (syndrome != 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       35 Item    1  (syndrome <= 38)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+        Input Term   Covered  Reason for no coverage   Hint
+       -----------  --------  -----------------------  --------------
+  (syndrome <= 38)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (syndrome <= 38)_0    -                             
+  Row   2:    ***0***  (syndrome <= 38)_1    -                             
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                     98         6        92     6.12%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_soc_top/dut/dec --
+
+  File ecc_decoder.sv
+-----------Focused Expression View (Bimodal)------------
+Line       17 Item    1  (((c[1] ^ (c[3] ^ c[5])) ^ (((c[7] ^ c[9]) ^ (c[11] ^ c[13])) ^ ((c[15] ^ c[17]) ^ (c[19] ^ c[21])))) ^ (((c[23] ^ c[25]) ^ (c[27] ^ c[29])) ^ ((c[31] ^ c[33]) ^ (c[35] ^ c[37]))))
+Expression totals: 4 of 19 input terms covered = 21.05%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[1]         Y
+        c[3]         Y
+        c[5]         Y
+        c[7]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+        c[9]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[11]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[13]         Y
+       c[15]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[17]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[19]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[21]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[23]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[25]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[27]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[29]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[31]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[33]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[35]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+       c[37]         N  '_0' hit but '_1' not hit              Hit '_1' for output ->0 or ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           1  c[1]_0                -                                  
+ Row   2:           1           0  c[1]_1                -                                  
+ Row   3:           1           0  c[3]_0                -                                  
+ Row   4:           1           1  c[3]_1                -                                  
+ Row   5:           1           0  c[5]_0                -                                  
+ Row   6:           1           1  c[5]_1                -                                  
+ Row   7:           1           1  c[7]_0                -                                  
+ Row   8:           0           0  c[7]_1                -                                  
+ Row   9:           1           1  c[9]_0                -                                  
+Row   10:           0           0  c[9]_1                -                                  
+Row   11:           1           1  c[11]_0               -                                  
+Row   12:           0           0  c[11]_1               -                                  
+Row   13:           1           0  c[13]_0               -                                  
+Row   14:           1           1  c[13]_1               -                                  
+Row   15:           1           1  c[15]_0               -                                  
+Row   16:           0           0  c[15]_1               -                                  
+Row   17:           1           1  c[17]_0               -                                  
+Row   18:           0           0  c[17]_1               -                                  
+Row   19:           1           1  c[19]_0               -                                  
+Row   20:           0           0  c[19]_1               -                                  
+Row   21:           1           1  c[21]_0               -                                  
+Row   22:           0           0  c[21]_1               -                                  
+Row   23:           1           1  c[23]_0               -                                  
+Row   24:           0           0  c[23]_1               -                                  
+Row   25:           1           1  c[25]_0               -                                  
+Row   26:           0           0  c[25]_1               -                                  
+Row   27:           1           1  c[27]_0               -                                  
+Row   28:           0           0  c[27]_1               -                                  
+Row   29:           1           1  c[29]_0               -                                  
+Row   30:           0           0  c[29]_1               -                                  
+Row   31:           1           1  c[31]_0               -                                  
+Row   32:           0           0  c[31]_1               -                                  
+Row   33:           1           1  c[33]_0               -                                  
+Row   34:           0           0  c[33]_1               -                                  
+Row   35:           1           1  c[35]_0               -                                  
+Row   36:           0           0  c[35]_1               -                                  
+Row   37:           1           1  c[37]_0               -                                  
+Row   38:           0           0  c[37]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       18 Item    1  (((c[2] ^ (c[3] ^ c[6])) ^ (((c[7] ^ c[10]) ^ (c[11] ^ c[14])) ^ ((c[15] ^ c[18]) ^ (c[19] ^ c[22])))) ^ (((c[23] ^ c[26]) ^ (c[27] ^ c[30])) ^ ((c[31] ^ c[34]) ^ (c[35] ^ c[38]))))
+Expression totals: 0 of 19 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[2]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[3]         N  Both rows hit for same output ->0      Hit either row for output ->1
+        c[6]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[7]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[10]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[11]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[14]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[15]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[18]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[19]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[22]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[23]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[26]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[27]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[34]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[35]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[38]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[2]_0                -                                  
+ Row   2:           0           0  c[2]_1                -                                  
+ Row   3:           1           0  c[3]_0                -                                  
+ Row   4:           1           0  c[3]_1                -                                  
+ Row   5:           1           0  c[6]_0                -                                  
+ Row   6:           0           0  c[6]_1                -                                  
+ Row   7:           1           0  c[7]_0                -                                  
+ Row   8:           0           0  c[7]_1                -                                  
+ Row   9:           1           0  c[10]_0               -                                  
+Row   10:           1           0  c[10]_1               -                                  
+Row   11:           1           0  c[11]_0               -                                  
+Row   12:           0           0  c[11]_1               -                                  
+Row   13:           1           0  c[14]_0               -                                  
+Row   14:           0           0  c[14]_1               -                                  
+Row   15:           1           0  c[15]_0               -                                  
+Row   16:           0           0  c[15]_1               -                                  
+Row   17:           1           0  c[18]_0               -                                  
+Row   18:           0           0  c[18]_1               -                                  
+Row   19:           1           0  c[19]_0               -                                  
+Row   20:           0           0  c[19]_1               -                                  
+Row   21:           1           0  c[22]_0               -                                  
+Row   22:           0           0  c[22]_1               -                                  
+Row   23:           1           0  c[23]_0               -                                  
+Row   24:           0           0  c[23]_1               -                                  
+Row   25:           1           0  c[26]_0               -                                  
+Row   26:           0           0  c[26]_1               -                                  
+Row   27:           1           0  c[27]_0               -                                  
+Row   28:           0           0  c[27]_1               -                                  
+Row   29:           1           0  c[30]_0               -                                  
+Row   30:           0           0  c[30]_1               -                                  
+Row   31:           1           0  c[31]_0               -                                  
+Row   32:           0           0  c[31]_1               -                                  
+Row   33:           1           0  c[34]_0               -                                  
+Row   34:           0           0  c[34]_1               -                                  
+Row   35:           1           0  c[35]_0               -                                  
+Row   36:           0           0  c[35]_1               -                                  
+Row   37:           1           0  c[38]_0               -                                  
+Row   38:           0           0  c[38]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       19 Item    1  (((c[4] ^ (c[5] ^ c[6])) ^ (((c[7] ^ c[12]) ^ (c[13] ^ c[14])) ^ ((c[15] ^ c[20]) ^ (c[21] ^ c[22])))) ^ (((c[23] ^ c[28]) ^ (c[29] ^ c[30])) ^ ((c[31] ^ c[36]) ^ (c[37] ^ c[38]))))
+Expression totals: 0 of 19 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[4]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[5]         N  Both rows hit for same output ->0      Hit either row for output ->1
+        c[6]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[7]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[12]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[13]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[14]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[15]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[20]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[21]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[22]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[23]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[28]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[29]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[36]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[37]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[38]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[4]_0                -                                  
+ Row   2:           0           0  c[4]_1                -                                  
+ Row   3:           1           0  c[5]_0                -                                  
+ Row   4:           1           0  c[5]_1                -                                  
+ Row   5:           1           0  c[6]_0                -                                  
+ Row   6:           0           0  c[6]_1                -                                  
+ Row   7:           1           0  c[7]_0                -                                  
+ Row   8:           0           0  c[7]_1                -                                  
+ Row   9:           1           0  c[12]_0               -                                  
+Row   10:           0           0  c[12]_1               -                                  
+Row   11:           1           0  c[13]_0               -                                  
+Row   12:           1           0  c[13]_1               -                                  
+Row   13:           1           0  c[14]_0               -                                  
+Row   14:           0           0  c[14]_1               -                                  
+Row   15:           1           0  c[15]_0               -                                  
+Row   16:           0           0  c[15]_1               -                                  
+Row   17:           1           0  c[20]_0               -                                  
+Row   18:           0           0  c[20]_1               -                                  
+Row   19:           1           0  c[21]_0               -                                  
+Row   20:           0           0  c[21]_1               -                                  
+Row   21:           1           0  c[22]_0               -                                  
+Row   22:           0           0  c[22]_1               -                                  
+Row   23:           1           0  c[23]_0               -                                  
+Row   24:           0           0  c[23]_1               -                                  
+Row   25:           1           0  c[28]_0               -                                  
+Row   26:           0           0  c[28]_1               -                                  
+Row   27:           1           0  c[29]_0               -                                  
+Row   28:           0           0  c[29]_1               -                                  
+Row   29:           1           0  c[30]_0               -                                  
+Row   30:           0           0  c[30]_1               -                                  
+Row   31:           1           0  c[31]_0               -                                  
+Row   32:           0           0  c[31]_1               -                                  
+Row   33:           1           0  c[36]_0               -                                  
+Row   34:           0           0  c[36]_1               -                                  
+Row   35:           1           0  c[37]_0               -                                  
+Row   36:           0           0  c[37]_1               -                                  
+Row   37:           1           0  c[38]_0               -                                  
+Row   38:           0           0  c[38]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       20 Item    1  ((((c[8] ^ c[9]) ^ (c[10] ^ c[11])) ^ ((c[12] ^ c[13]) ^ (c[14] ^ c[15]))) ^ (((c[24] ^ c[25]) ^ (c[26] ^ c[27])) ^ ((c[28] ^ c[29]) ^ (c[30] ^ c[31]))))
+Expression totals: 0 of 16 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+        c[8]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+        c[9]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[10]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[11]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[12]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[13]         N  Both rows hit for same output ->0      Hit either row for output ->1
+       c[14]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[15]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[24]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[25]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[26]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[27]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[28]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[29]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[8]_0                -                                  
+ Row   2:           0           0  c[8]_1                -                                  
+ Row   3:           1           0  c[9]_0                -                                  
+ Row   4:           0           0  c[9]_1                -                                  
+ Row   5:           1           0  c[10]_0               -                                  
+ Row   6:           1           0  c[10]_1               -                                  
+ Row   7:           1           0  c[11]_0               -                                  
+ Row   8:           0           0  c[11]_1               -                                  
+ Row   9:           1           0  c[12]_0               -                                  
+Row   10:           0           0  c[12]_1               -                                  
+Row   11:           1           0  c[13]_0               -                                  
+Row   12:           1           0  c[13]_1               -                                  
+Row   13:           1           0  c[14]_0               -                                  
+Row   14:           0           0  c[14]_1               -                                  
+Row   15:           1           0  c[15]_0               -                                  
+Row   16:           0           0  c[15]_1               -                                  
+Row   17:           1           0  c[24]_0               -                                  
+Row   18:           0           0  c[24]_1               -                                  
+Row   19:           1           0  c[25]_0               -                                  
+Row   20:           0           0  c[25]_1               -                                  
+Row   21:           1           0  c[26]_0               -                                  
+Row   22:           0           0  c[26]_1               -                                  
+Row   23:           1           0  c[27]_0               -                                  
+Row   24:           0           0  c[27]_1               -                                  
+Row   25:           1           0  c[28]_0               -                                  
+Row   26:           0           0  c[28]_1               -                                  
+Row   27:           1           0  c[29]_0               -                                  
+Row   28:           0           0  c[29]_1               -                                  
+Row   29:           1           0  c[30]_0               -                                  
+Row   30:           0           0  c[30]_1               -                                  
+Row   31:           1           0  c[31]_0               -                                  
+Row   32:           0           0  c[31]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       21 Item    1  ((((c[16] ^ c[17]) ^ (c[18] ^ c[19])) ^ ((c[20] ^ c[21]) ^ (c[22] ^ c[23]))) ^ (((c[24] ^ c[25]) ^ (c[26] ^ c[27])) ^ ((c[28] ^ c[29]) ^ (c[30] ^ c[31]))))
+Expression totals: 0 of 16 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+       c[16]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[17]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[18]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[19]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[20]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[21]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[22]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[23]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[24]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[25]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[26]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[27]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[28]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[29]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[30]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[31]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[16]_0               -                                  
+ Row   2:           0           0  c[16]_1               -                                  
+ Row   3:           1           0  c[17]_0               -                                  
+ Row   4:           0           0  c[17]_1               -                                  
+ Row   5:           1           0  c[18]_0               -                                  
+ Row   6:           0           0  c[18]_1               -                                  
+ Row   7:           1           0  c[19]_0               -                                  
+ Row   8:           0           0  c[19]_1               -                                  
+ Row   9:           1           0  c[20]_0               -                                  
+Row   10:           0           0  c[20]_1               -                                  
+Row   11:           1           0  c[21]_0               -                                  
+Row   12:           0           0  c[21]_1               -                                  
+Row   13:           1           0  c[22]_0               -                                  
+Row   14:           0           0  c[22]_1               -                                  
+Row   15:           1           0  c[23]_0               -                                  
+Row   16:           0           0  c[23]_1               -                                  
+Row   17:           1           0  c[24]_0               -                                  
+Row   18:           0           0  c[24]_1               -                                  
+Row   19:           1           0  c[25]_0               -                                  
+Row   20:           0           0  c[25]_1               -                                  
+Row   21:           1           0  c[26]_0               -                                  
+Row   22:           0           0  c[26]_1               -                                  
+Row   23:           1           0  c[27]_0               -                                  
+Row   24:           0           0  c[27]_1               -                                  
+Row   25:           1           0  c[28]_0               -                                  
+Row   26:           0           0  c[28]_1               -                                  
+Row   27:           1           0  c[29]_0               -                                  
+Row   28:           0           0  c[29]_1               -                                  
+Row   29:           1           0  c[30]_0               -                                  
+Row   30:           0           0  c[30]_1               -                                  
+Row   31:           1           0  c[31]_0               -                                  
+Row   32:           0           0  c[31]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       22 Item    1  ((c[32] ^ (c[33] ^ c[34])) ^ ((c[35] ^ c[36]) ^ (c[37] ^ c[38])))
+Expression totals: 0 of 7 input terms covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage                  Hint
+ -----------  --------  --------------------------------------  --------------
+       c[32]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[33]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[34]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[35]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[36]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[37]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+       c[38]         N  '_0' hit but '_1' is not hit           Hit '_1' for output ->1
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           1           0  c[32]_0               -                                  
+ Row   2:           0           0  c[32]_1               -                                  
+ Row   3:           1           0  c[33]_0               -                                  
+ Row   4:           0           0  c[33]_1               -                                  
+ Row   5:           1           0  c[34]_0               -                                  
+ Row   6:           0           0  c[34]_1               -                                  
+ Row   7:           1           0  c[35]_0               -                                  
+ Row   8:           0           0  c[35]_1               -                                  
+ Row   9:           1           0  c[36]_0               -                                  
+Row   10:           0           0  c[36]_1               -                                  
+Row   11:           1           0  c[37]_0               -                                  
+Row   12:           0           0  c[37]_1               -                                  
+Row   13:           1           0  c[38]_0               -                                  
+Row   14:           0           0  c[38]_1               -                                  
+
+-----------Focused Expression View (Bimodal)------------
+Line       25 Item    1  (^c ^ p_in)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      17        15         2    88.23%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top/dut/dec --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ecc_decoder.sv
+    14              1                          6     
+    17              1                          5     
+    18              1                          5     
+    19              1                          5     
+    20              1                          5     
+    21              1                          5     
+    22              1                          5     
+    25              1                          6     
+    27              1                          6     
+    28              1                          6     
+    29              1                          6     
+    30              1                          6     
+    34              1                    ***0***     
+    36              1                    ***0***     
+    39              1                          1     
+    42              1                          1     
+    46              1                          6     
+
+=================================================================================
+=== Instance: /tb_soc_top
+=== Design Unit: work.tb_soc_top
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         4         4    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_soc_top
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tb_soc_top.sv
+------------------------------------IF Branch------------------------------------
+    45                                        12     Count coming in to IF
+    45              1                    ***0***     
+    48              1                         12     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    54                                         6     Count coming in to IF
+    54              1                    ***0***     
+    57              1                          6     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    128                                        1     Count coming in to IF
+    128             1                          1     
+    130             1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    135                                        1     Count coming in to IF
+    135             1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       5         1         4    20.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_soc_top --
+
+  File tb_soc_top.sv
+----------------Focused Condition View-------------------
+Line       45 Item    1  (got !== expected)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (got !== expected)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (got !== expected)_0  -                             
+  Row   2:    ***0***  (got !== expected)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       54 Item    1  (got !== expected)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (got !== expected)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (got !== expected)_0  -                             
+  Row   2:    ***0***  (got !== expected)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       67 Item    1  (dut.pc !== target)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       128 Item    1  (errors == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  (errors == 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (errors == 0)_0       -                             
+  Row   2:          1  (errors == 0)_1       -                             
+
+----------------Focused Condition View-------------------
+Line       135 Item    1  (errors != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  (errors != 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (errors != 0)_0       -                             
+  Row   2:    ***0***  (errors != 0)_1       -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      58        50         8    86.20%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_soc_top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tb_soc_top.sv
+    19              1                          1     
+    20              1                          1     
+    20              2                        100     
+    20              3                         99     
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+    27              1                          2     
+    27              2                          2     
+    28              1                          1     
+    46              1                    ***0***     
+    47              1                    ***0***     
+    49              1                         12     
+    55              1                    ***0***     
+    56              1                    ***0***     
+    58              1                          6     
+    67              1                         48     
+    67              2                         42     
+    68              1                          6     
+    73              1                          1     
+    74              1                          1     
+    75              1                          1     
+    79              1                          1     
+    80              1                          1     
+    81              1                          1     
+    82              1                          1     
+    83              1                          1     
+    89              1                          1     
+    90              1                          1     
+    91              1                          1     
+    92              1                          1     
+    97              1                          1     
+    98              1                          1     
+    99              1                          1     
+    100             1                          1     
+    105             1                          1     
+    106             1                          1     
+    107             1                          1     
+    111             1                          1     
+    112             1                          1     
+    115             1                          1     
+    116             1                          1     
+    117             1                          1     
+    118             1                          1     
+    119             1                          1     
+    121             1                          1     
+    122             1                          1     
+    123             1                          1     
+    124             1                          1     
+    127             1                          1     
+    129             1                          1     
+    131             1                    ***0***     
+    133             1                          1     
+    135             1                    ***0***     
+    136             1                          1     
+    142             1                          1     
+    143             1                    ***0***     
+    144             1                    ***0***     
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_soc_top/dut/processor/rv32i_core_sva_inst/assert__p_no_mem_req_during_reset
+                     core_assertions.sv(17)             0          1
+/tb_soc_top/dut/processor/rv32i_core_sva_inst/assert__p_pc_word_aligned
+                     core_assertions.sv(11)             0          1
+/tb_soc_top/dut/dec/ecc_decoder_sva_inst/#ublk#91378931#8/immed__16
+                     ecc_assertions.sv(16)              0          1
+
+Total Coverage By Instance (filtered view): 68.63%
+

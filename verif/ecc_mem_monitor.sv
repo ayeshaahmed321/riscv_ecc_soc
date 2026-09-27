@@ -16,7 +16,7 @@ class ecc_mem_monitor extends uvm_monitor;
         cap_addr = '0;
         cap_wdata = '0;
         cap_mask = '0;
-    endfunction
+    endfunctiaon
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);

@@ -1,0 +1,2315 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_uvm_system_top/vif
+=== Design Unit: work.cpu_bus_if
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         3         1    75.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_uvm_system_top/vif
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File cpu_bus_if.sv
+------------------------------------IF Branch------------------------------------
+    41                                         8     Count coming in to IF
+    41              1                          8     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    45                                         8     Count coming in to IF
+    45              1                          1     
+                                               7     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       3         1         2    33.33%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_uvm_system_top/vif --
+
+  File cpu_bus_if.sv
+----------------Focused Condition View-------------------
+Line       41 Item    1  (~cs_n && (spi_capture_bits < 8))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+                    cs_n         N  '_1' not hit             Hit '_1'
+  (spi_capture_bits < 8)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          1  cs_n_0                    (spi_capture_bits < 8)        
+  Row   2:    ***0***  cs_n_1                    -                             
+  Row   3:    ***0***  (spi_capture_bits < 8)_0  ~cs_n                         
+  Row   4:          1  (spi_capture_bits < 8)_1  ~cs_n                         
+
+----------------Focused Condition View-------------------
+Line       45 Item    1  (spi_capture_bits == 8)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      14        14         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_system_top/vif --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File cpu_bus_if.sv
+    27              1                          1     
+    28              1                          1     
+    29              1                          1     
+    30              1                          1     
+    33              1                          1     
+    34              1                          1     
+    35              1                          1     
+    36              1                          1     
+    37              1                          1     
+    40              1                          8     
+    42              1                          8     
+    43              1                          8     
+    44              1                          8     
+    46              1                          1     
+
+=================================================================================
+=== Instance: /tb_uvm_system_top/bus_matrix
+=== Design Unit: work.amba_interconnect
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        33        16        17    48.48%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_uvm_system_top/bus_matrix
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File amba_interconnect.sv
+------------------------------------IF Branch------------------------------------
+    41                                        78     Count coming in to IF
+    41              1                          2     
+    42              1                         76     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    56                                        87     Count coming in to CASE
+    57              1                         43     
+    65              1                    ***0***     
+    84              1                         23     
+    93              1                         19     
+                                               2     All False Count
+Branch totals: 4 hits of 5 branches = 80.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                        43     Count coming in to IF
+    58              1                         19     
+                                              24     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    60                                        19     Count coming in to IF
+    60              1                    ***0***     
+                                              19     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                        19     Count coming in to IF
+    61              1                         19     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                   ***0***     Count coming in to IF
+    67              1                    ***0***     
+    73              1                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                   ***0***     Count coming in to IF
+    69              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                   ***0***     Count coming in to IF
+    75              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    86                                        23     Count coming in to IF
+    86              1                    ***0***     
+    87              1                         21     
+    88              1                          2     
+                                         ***0***     All False Count
+Branch totals: 2 hits of 4 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    97                                        19     Count coming in to IF
+    97              1                    ***0***     
+    105             1                         17     
+    113             1                          2     
+    121             1                    ***0***     
+Branch totals: 2 hits of 4 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    99                                   ***0***     Count coming in to IF
+    99              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    107                                       17     Count coming in to IF
+    107             1                         17     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    115                                        2     Count coming in to IF
+    115             1                          2     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      8         2         6    25.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_uvm_system_top/bus_matrix --
+
+  File amba_interconnect.sv
+----------------Focused Expression View-----------------
+Line       34 Item    1  (cpu_addr < 256)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+        Input Term   Covered  Reason for no coverage   Hint
+       -----------  --------  -----------------------  --------------
+  (cpu_addr < 256)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (cpu_addr < 256)_0    -                             
+  Row   2:    ***0***  (cpu_addr < 256)_1    -                             
+
+----------------Focused Expression View-----------------
+Line       35 Item    1  (cpu_addr >= 256)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (cpu_addr >= 256)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (cpu_addr >= 256)_0   -                             
+  Row   2:          1  (cpu_addr >= 256)_1   -                             
+
+----------------Focused Expression View-----------------
+Line       36 Item    1  ((cpu_addr >= 256) && (cpu_addr < 512))
+Expression totals: 0 of 2 input terms covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (cpu_addr >= 256)         N  No hits                  Hit '_0' and '_1'
+   (cpu_addr < 512)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (cpu_addr >= 256)_0   -                             
+  Row   2:    ***0***  (cpu_addr >= 256)_1   (cpu_addr < 512)              
+  Row   3:          1  (cpu_addr < 512)_0    (cpu_addr >= 256)             
+  Row   4:    ***0***  (cpu_addr < 512)_1    (cpu_addr >= 256)             
+
+----------------Focused Expression View-----------------
+Line       37 Item    1  ((cpu_addr >= 512) && (cpu_addr < 768))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (cpu_addr >= 512)         N  '_0' not hit             Hit '_0'
+   (cpu_addr < 768)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (cpu_addr >= 512)_0   -                             
+  Row   2:          1  (cpu_addr >= 512)_1   (cpu_addr < 768)              
+  Row   3:          1  (cpu_addr < 768)_0    (cpu_addr >= 512)             
+  Row   4:          1  (cpu_addr < 768)_1    (cpu_addr >= 512)             
+
+----------------Focused Expression View-----------------
+Line       38 Item    1  ((cpu_addr >= 768) && (cpu_addr < 1024))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (cpu_addr >= 768)         Y
+  (cpu_addr < 1024)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (cpu_addr >= 768)_0   -                             
+  Row   2:          1  (cpu_addr >= 768)_1   (cpu_addr < 1024)             
+  Row   3:    ***0***  (cpu_addr < 1024)_0   (cpu_addr >= 768)             
+  Row   4:          1  (cpu_addr < 1024)_1   (cpu_addr >= 768)             
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       4         3         1    75.00%
+    FSM Transitions                  6         3         3    50.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /tb_uvm_system_top/bus_matrix --
+
+FSM_ID: state
+    Current State Object : state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  57                IDLE                   0
+  84           APB_SETUP                   2
+  65            AXI_WAIT                   1
+  93          APB_ACCESS                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    IDLE                  40          
+               APB_SETUP                  19          
+              APB_ACCESS                  19          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  61                   0                  19          IDLE -> APB_SETUP             
+  89                   2                  19          APB_SETUP -> APB_ACCESS          
+ 123                   5                  19          APB_ACCESS -> IDLE            
+    Uncovered States :
+    ------------------
+                   State
+                   -----
+                AXI_WAIT
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  60                   1          IDLE -> AXI_WAIT    
+  41                   3          APB_SETUP -> IDLE   
+  78                   4          AXI_WAIT -> IDLE    
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         3         1    75.00%
+        FSM Transitions              6         3         3    50.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      62        43        19    69.35%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_system_top/bus_matrix --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File amba_interconnect.sv
+    34              1                         17     
+    35              1                         17     
+    36              1                         17     
+    37              1                         17     
+    38              1                         17     
+    40              1                         78     
+    41              1                          2     
+    42              1                         76     
+    45              1                         87     
+    46              1                         87     
+    47              1                         87     
+    48              1                         87     
+    50              1                         87     
+    50              2                         87     
+    50              3                         87     
+    50              4                         87     
+    50              5                         87     
+    51              1                         87     
+    51              2                         87     
+    51              3                         87     
+    53              1                         87     
+    53              2                         87     
+    53              3                         87     
+    53              4                         87     
+    54              1                         87     
+    54              2                         87     
+    54              3                         87     
+    59              1                         19     
+    60              1                    ***0***     
+    61              1                         19     
+    66              1                    ***0***     
+    68              1                    ***0***     
+    68              2                    ***0***     
+    68              3                    ***0***     
+    70              1                    ***0***     
+    71              1                    ***0***     
+    74              1                    ***0***     
+    74              2                    ***0***     
+    76              1                    ***0***     
+    77              1                    ***0***     
+    78              1                    ***0***     
+    85              1                         23     
+    86              1                    ***0***     
+    87              1                         21     
+    88              1                          2     
+    89              1                         23     
+    94              1                         19     
+    95              1                         19     
+    98              1                    ***0***     
+    100             1                    ***0***     
+    101             1                    ***0***     
+    102             1                    ***0***     
+    106             1                         17     
+    108             1                         17     
+    109             1                         17     
+    110             1                         17     
+    114             1                          2     
+    116             1                          2     
+    117             1                          2     
+    118             1                          2     
+    122             1                    ***0***     
+    123             1                    ***0***     
+
+=================================================================================
+=== Instance: /tb_uvm_system_top/motor/apb_motor_ctrl_sva_inst
+=== Design Unit: work.apb_motor_ctrl_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_uvm_system_top/motor/apb_motor_ctrl_sva_inst/assert__p_failsafe_pwm_low_when_stalled
+                     motor_assertions.sv(20)            0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_uvm_system_top/motor/apb_motor_ctrl_sva_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File motor_assertions.sv
+------------------------------------IF Branch------------------------------------
+    33                                       746     Count coming in to IF
+    33              1                         11     
+                                             735     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    35                                       746     Count coming in to IF
+    35              1                          9     
+                                             737     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    43                                       746     Count coming in to IF
+    43              1                         16     
+                                             730     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       7         7         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_uvm_system_top/motor/apb_motor_ctrl_sva_inst --
+
+  File motor_assertions.sv
+----------------Focused Condition View-------------------
+Line       33 Item    1  ((psel && penable) && pwrite)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       35 Item    1  ((profile_running !== prev_running) || (profile_index !== prev_index))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       43 Item    1  (($time() >= 1400) && ($time() <= 1560))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       8         8         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_system_top/motor/apb_motor_ctrl_sva_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File motor_assertions.sv
+    29              1                          1     
+    30              1                          1     
+    32              1                        746     
+    34              1                         11     
+    36              1                          9     
+    38              1                          9     
+    39              1                          9     
+    44              1                         16     
+
+=================================================================================
+=== Instance: /tb_uvm_system_top/motor
+=== Design Unit: work.apb_motor_ctrl
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        42        40         2    95.23%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_uvm_system_top/motor
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_motor_ctrl.sv
+------------------------------------IF Branch------------------------------------
+    37                                        19     Count coming in to IF
+    37              1                          8     
+    37              2                         11     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                       170     Count coming in to IF
+    49              1                          2     
+    55              1                         11     
+    69              1                          6     
+                                             151     All False Count
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                        11     Count coming in to IF
+    56              1                          1     
+                                              10     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                        11     Count coming in to IF
+    58              1                          1     
+                                              10     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                        11     Count coming in to IF
+    61              1                          8     
+                                               3     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                        11     Count coming in to IF
+    65              1                          1     
+                                              10     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                       170     Count coming in to IF
+    74              1                         88     
+    85              1                         81     
+                                               1     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                        88     Count coming in to IF
+    75              1                          8     
+    82              1                         80     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    77                                         8     Count coming in to IF
+    77              1                          1     
+    79              1                          7     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    92                                        83     Count coming in to IF
+    92              1                          6     
+                                              77     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                         6     Count coming in to IF
+    93              1                          1     
+    94              1                          1     
+    95              1                          2     
+    96              1                    ***0***     
+    98              1                          1     
+    99              1                          1     
+                                         ***0***     All False Count
+Branch totals: 5 hits of 7 branches = 71.42%
+
+------------------------------------IF Branch------------------------------------
+    105                                      747     Count coming in to IF
+    105             1                          2     
+    106             1                        745     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    110                                      746     Count coming in to IF
+    110             1                        263     
+    110             2                        483     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    122                                      747     Count coming in to IF
+    122             1                          2     
+    127             1                        745     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    130                                      745     Count coming in to IF
+    130             1                         45     
+                                             700     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    132                                      745     Count coming in to IF
+    132             1                         14     
+    141             1                        731     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    138                                       14     Count coming in to IF
+    138             1                          6     
+                                               8     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      29        20         9    68.96%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_uvm_system_top/motor --
+
+  File apb_motor_ctrl.sv
+----------------Focused Condition View-------------------
+Line       55 Item    1  ((psel && penable) && pwrite)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       56 Item    1  (paddr == 512)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       58 Item    1  ((paddr == 520) && pwdata[0])
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 520)         Y
+       pwdata[0]         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (paddr == 520)_0      -                             
+  Row   2:          1  (paddr == 520)_1      pwdata[0]                     
+  Row   3:    ***0***  pwdata[0]_0           (paddr == 520)                
+  Row   4:          1  pwdata[0]_1           (paddr == 520)                
+
+----------------Focused Condition View-------------------
+Line       61 Item    1  (((paddr >= 528) && (paddr <= 556)) && (paddr[1:0] == 0))
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+     (paddr >= 528)         Y
+     (paddr <= 556)         Y
+  (paddr[1:0] == 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (paddr >= 528)_0      -                             
+  Row   2:          1  (paddr >= 528)_1      ((paddr[1:0] == 0) && (paddr <= 556))
+  Row   3:          1  (paddr <= 556)_0      (paddr >= 528)                
+  Row   4:          1  (paddr <= 556)_1      ((paddr[1:0] == 0) && (paddr >= 528))
+  Row   5:    ***0***  (paddr[1:0] == 0)_0   ((paddr >= 528) && (paddr <= 556))
+  Row   6:          1  (paddr[1:0] == 0)_1   ((paddr >= 528) && (paddr <= 556))
+
+----------------Focused Condition View-------------------
+Line       65 Item    1  (((paddr == 560) && pwdata[0]) && ~profile_running)
+Condition totals: 1 of 3 input terms covered = 33.33%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+   (paddr == 560)         Y
+        pwdata[0]         N  '_0' not hit             Hit '_0'
+  profile_running         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (paddr == 560)_0      -                             
+  Row   2:          1  (paddr == 560)_1      (~profile_running && pwdata[0])
+  Row   3:    ***0***  pwdata[0]_0           (paddr == 560)                
+  Row   4:          1  pwdata[0]_1           (~profile_running && (paddr == 560))
+  Row   5:          1  profile_running_0     ((paddr == 560) && pwdata[0]) 
+  Row   6:    ***0***  profile_running_1     ((paddr == 560) && pwdata[0]) 
+
+----------------Focused Condition View-------------------
+Line       74 Item    1  (presetn && profile_running)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       75 Item    1  (profile_step_timer == 10)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       77 Item    1  (profile_index == 7)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       92 Item    1  (psel && ~pwrite)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       93 Item    1  (paddr == 512)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       94 Item    1  (paddr == 516)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       95 Item    1  (paddr == 520)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       96 Item    1  (((paddr >= 528) && (paddr <= 556)) && (paddr[1:0] == 0))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+     (paddr >= 528)         N  No hits                  Hit '_0' and '_1'
+     (paddr <= 556)         N  '_1' not hit             Hit '_1'
+  (paddr[1:0] == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr >= 528)_0      -                             
+  Row   2:    ***0***  (paddr >= 528)_1      ((paddr[1:0] == 0) && (paddr <= 556))
+  Row   3:          1  (paddr <= 556)_0      (paddr >= 528)                
+  Row   4:    ***0***  (paddr <= 556)_1      ((paddr[1:0] == 0) && (paddr >= 528))
+  Row   5:    ***0***  (paddr[1:0] == 0)_0   ((paddr >= 528) && (paddr <= 556))
+  Row   6:    ***0***  (paddr[1:0] == 0)_1   ((paddr >= 528) && (paddr <= 556))
+
+----------------Focused Condition View-------------------
+Line       98 Item    1  (paddr == 560)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       99 Item    1  (paddr == 564)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (paddr == 564)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (paddr == 564)_0      -                             
+  Row   2:          1  (paddr == 564)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       132 Item    1  (window_timer == 50)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       138 Item    1  ((effective_duty > 10) && (edge_counter == 0))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+  (effective_duty > 10)         N  '_0' not hit             Hit '_0'
+    (edge_counter == 0)         Y
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:    ***0***  (effective_duty > 10)_0  -                             
+  Row   2:          1  (effective_duty > 10)_1  (edge_counter == 0)           
+  Row   3:          1  (edge_counter == 0)_0    (effective_duty > 10)         
+  Row   4:          1  (edge_counter == 0)_1    (effective_duty > 10)         
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         4         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_uvm_system_top/motor --
+
+  File apb_motor_ctrl.sv
+----------------Focused Expression View-----------------
+Line       110 Item    1  (stall_flag? 1'b0: (pwm_counter < effective_duty))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       119 Item    1  (tacho_sync1 & ~tacho_sync2)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      48        47         1    97.91%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_system_top/motor --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_motor_ctrl.sv
+    37              1                         20     
+    48              1                        170     
+    50              1                          2     
+    51              1                          2     
+    52              1                          2     
+    53              1                          2     
+    54              1                          2     
+    54              2                         16     
+    54              3                         16     
+    56              1                          1     
+    58              1                          1     
+    62              1                          8     
+    66              1                          1     
+    67              1                          1     
+    70              1                          6     
+    76              1                          8     
+    78              1                          1     
+    80              1                          7     
+    83              1                         80     
+    86              1                         81     
+    90              1                         83     
+    91              1                         83     
+    93              1                          1     
+    94              1                          1     
+    95              1                          2     
+    97              1                    ***0***     
+    98              1                          1     
+    99              1                          1     
+    104             1                        747     
+    105             1                          2     
+    106             1                        745     
+    110             1                        747     
+    115             1                        273     
+    116             1                        273     
+    117             1                        273     
+    119             1                        183     
+    121             1                        747     
+    123             1                          2     
+    124             1                          2     
+    125             1                          2     
+    126             1                          2     
+    128             1                        745     
+    130             1                         45     
+    133             1                         14     
+    134             1                         14     
+    135             1                         14     
+    139             1                          6     
+    142             1                        731     
+
+=================================================================================
+=== Instance: /tb_uvm_system_top/spi
+=== Design Unit: work.apb_spi_master
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        17        15         2    88.23%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_uvm_system_top/spi
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_spi_master.sv
+------------------------------------IF Branch------------------------------------
+    27                                       279     Count coming in to IF
+    27              1                          2     
+    35              1                        277     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    37                                       277     Count coming in to IF
+    37              1                          1     
+                                             276     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    45                                       277     Count coming in to IF
+    45              1                        248     
+    68              1                         29     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                       248     Count coming in to IF
+    49              1                         16     
+                                             232     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    53                                        16     Count coming in to IF
+    53              1                          8     
+    57              1                          8     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                         8     Count coming in to IF
+    58              1                          1     
+    62              1                          7     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    81                                        29     Count coming in to IF
+    81              1                          1     
+                                              28     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    82                                         1     Count coming in to CASE
+    83              1                    ***0***     
+    84              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 3 branches = 33.33%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       9         7         2    77.77%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_uvm_system_top/spi --
+
+  File apb_spi_master.sv
+----------------Focused Condition View-------------------
+Line       37 Item    1  ((((psel && penable) && pwrite) && (paddr == 768)) && ~busy)
+Condition totals: 3 of 5 input terms covered = 60.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+            psel         Y
+         penable         Y
+          pwrite         Y
+  (paddr == 768)         N  '_0' not hit             Hit '_0'
+            busy         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  psel_0                -                             
+  Row   2:          1  psel_1                (~busy && (paddr == 768) && pwrite && penable)
+  Row   3:          1  penable_0             psel                          
+  Row   4:          1  penable_1             (~busy && (paddr == 768) && pwrite && psel)
+  Row   5:          1  pwrite_0              (psel && penable)             
+  Row   6:          1  pwrite_1              (~busy && (paddr == 768) && (psel && penable))
+  Row   7:    ***0***  (paddr == 768)_0      ((psel && penable) && pwrite) 
+  Row   8:          1  (paddr == 768)_1      (~busy && ((psel && penable) && pwrite))
+  Row   9:          1  busy_0                (((psel && penable) && pwrite) && (paddr == 768))
+ Row   10:    ***0***  busy_1                (((psel && penable) && pwrite) && (paddr == 768))
+
+----------------Focused Condition View-------------------
+Line       49 Item    1  (clk_div == 7)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       58 Item    1  (bit_cnt == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       81 Item    1  (psel && ~pwrite)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      26        25         1    96.15%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_system_top/spi --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_spi_master.sv
+    26              1                        279     
+    28              1                          2     
+    29              1                          2     
+    30              1                          2     
+    31              1                          2     
+    32              1                          2     
+    33              1                          2     
+    34              1                          2     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+    41              1                          1     
+    46              1                        248     
+    50              1                         16     
+    54              1                          8     
+    59              1                          1     
+    60              1                          1     
+    61              1                          1     
+    63              1                          7     
+    64              1                          7     
+    69              1                         29     
+    70              1                         29     
+    79              1                         29     
+    80              1                         29     
+    83              1                    ***0***     
+    84              1                          1     
+
+=================================================================================
+=== Instance: /tb_uvm_system_top
+=== Design Unit: work.tb_uvm_system_top
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15        15         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_system_top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tb_uvm_system_top.sv
+    7               1                          1     
+    7               2                          1     
+    7               3                       1492     
+    7               4                       1491     
+    8               1                          1     
+    8               2                          1     
+    8               3                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                         90     
+    26              1                         90     
+    26              2                         90     
+    28              1                          1     
+    72              1                          1     
+    73              1                          1     
+
+=================================================================================
+=== Instance: /cpu_bus_pkg
+=== Design Unit: work.cpu_bus_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       132        57        75    43.18%
+
+================================Branch Details================================
+
+Branch Coverage for instance /cpu_bus_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File cpu_bus_seq_item.sv
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               3                    ***0***     
+    5               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File cpu_bus_sequence.sv
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               3                    ***0***     
+    5               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File cpu_bus_driver.sv
+------------------------------------IF Branch------------------------------------
+    30                                        19     Count coming in to IF
+    30              1                         12     
+                                               7     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    39                                        19     Count coming in to IF
+    39              1                          7     
+                                              12     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+  File cpu_bus_monitor.sv
+------------------------------------IF Branch------------------------------------
+    31                                         1     Count coming in to IF
+    31              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    32                                   ***0***     Count coming in to IF
+    32              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    42                                       746     Count coming in to IF
+    42              1                        256     
+                                             490     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    44                                       256     Count coming in to IF
+    44              1                         64     
+                                             192     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                       746     Count coming in to IF
+    49              1                          1     
+                                             745     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    50                                         1     Count coming in to IF
+    50              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    55                                       746     Count coming in to IF
+    55              1                         19     
+                                             727     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                        19     Count coming in to IF
+    80              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+  File cpu_bus_scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    34                                        19     Count coming in to IF
+    34              1                    ***0***     
+                                              19     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    35                                   ***0***     Count coming in to IF
+    35              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    38                                        19     Count coming in to IF
+    38              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    40                                         1     Count coming in to IF
+    40              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    43                                        19     Count coming in to IF
+    43              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    45                                         1     Count coming in to IF
+    45              1                    ***0***     
+    49              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    47                                   ***0***     Count coming in to IF
+    47              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    50                                         1     Count coming in to IF
+    50              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                        19     Count coming in to IF
+    56              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    57                                         1     Count coming in to IF
+    57              1                    ***0***     
+    59              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                   ***0***     Count coming in to IF
+    58              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    60                                         1     Count coming in to IF
+    60              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                        19     Count coming in to IF
+    65              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                         1     Count coming in to IF
+    67              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    71                                        19     Count coming in to IF
+    71              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    72                                         1     Count coming in to IF
+    72              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                   ***0***     Count coming in to IF
+    73              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                         1     Count coming in to IF
+    76              1                    ***0***     
+    78              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    77                                   ***0***     Count coming in to IF
+    77              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                         1     Count coming in to IF
+    79              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    85                                        19     Count coming in to IF
+    85              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    86                                         1     Count coming in to IF
+    86              1                    ***0***     
+    88              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    87                                   ***0***     Count coming in to IF
+    87              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    92                                        19     Count coming in to IF
+    92              1                          1     
+                                              18     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                         1     Count coming in to IF
+    93              1                    ***0***     
+    95              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 3 branches = 33.33%
+
+------------------------------------IF Branch------------------------------------
+    94                                   ***0***     Count coming in to IF
+    94              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    96                                         1     Count coming in to IF
+    96              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    100                                       19     Count coming in to IF
+    100             1                          2     
+                                              17     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    102                                        2     Count coming in to IF
+    102             1                          1     
+    110             1                          1     
+                                         ***0***     All False Count
+Branch totals: 2 hits of 3 branches = 66.66%
+
+------------------------------------IF Branch------------------------------------
+    103                                        1     Count coming in to IF
+    103             1                    ***0***     
+    105             1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    104                                  ***0***     Count coming in to IF
+    104             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    106                                        1     Count coming in to IF
+    106             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    111                                        1     Count coming in to IF
+    111             1                    ***0***     
+    113             1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    112                                  ***0***     Count coming in to IF
+    112             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    114                                        1     Count coming in to IF
+    114             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    120                                        1     Count coming in to IF
+    120             1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    121                                  ***0***     Count coming in to IF
+    121             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    122                                        1     Count coming in to IF
+    122             1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    123                                  ***0***     Count coming in to IF
+    123             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    124                                        1     Count coming in to IF
+    124             1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    125                                  ***0***     Count coming in to IF
+    125             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    126                                        1     Count coming in to IF
+    126             1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    127                                  ***0***     Count coming in to IF
+    127             1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File cpu_bus_coverage.sv
+------------------------------------IF Branch------------------------------------
+    73                                         1     Count coming in to IF
+    73              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File cpu_bus_test.sv
+------------------------------------IF Branch------------------------------------
+    22                                         1     Count coming in to IF
+    22              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      45        25        20    55.55%
+
+================================Condition Details================================
+
+Condition Coverage for instance /cpu_bus_pkg --
+
+  File cpu_bus_seq_item.sv
+----------------Focused Condition View-------------------
+Line       5 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       5 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       5 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       5 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+
+----------------Focused Condition View-------------------
+Line       42 Item    1  (this.pwm_window_active && (this.pwm_samples_256 < 256))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       49 Item    1  (this.vif.spi_capture_done && ~this.prev_spi_done)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       55 Item    1  (this.vif.req && ~this.vif.stall)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       80 Item    1  (this.vif.we && (this.vif.addr == 512))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+----------------Focused Condition View-------------------
+Line       34 Item    1  (trans.cpu_stall && trans.pwm_out)
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  trans.cpu_stall         N  '_1' not hit             Hit '_1'
+    trans.pwm_out         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  trans.cpu_stall_0     -                             
+  Row   2:    ***0***  trans.cpu_stall_1     trans.pwm_out                 
+  Row   3:          1  trans.pwm_out_0       trans.cpu_stall               
+  Row   4:    ***0***  trans.pwm_out_1       trans.cpu_stall               
+
+----------------Focused Condition View-------------------
+Line       38 Item    1  (trans.we && (trans.addr == 512))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       43 Item    1  (~trans.we && (trans.addr == 512) && ~this.pwm_checked && (trans.pwm_samples >= 256))
+Condition totals: 2 of 4 input terms covered = 50.00%
+
+                  Input Term   Covered  Reason for no coverage   Hint
+                 -----------  --------  -----------------------  --------------
+                    trans.we         Y
+         (trans.addr == 512)         Y
+            this.pwm_checked         N  '_1' not hit             Hit '_1'
+  (trans.pwm_samples >= 256)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                    Non-masking condition(s)      
+ ---------  ---------  --------------------          -------------------------     
+  Row   1:          1  trans.we_0                    ((trans.addr == 512) && (~this.pwm_checked && (trans.pwm_samples >= 256)))
+  Row   2:          1  trans.we_1                    -                             
+  Row   3:          1  (trans.addr == 512)_0         ~trans.we                     
+  Row   4:          1  (trans.addr == 512)_1         (~trans.we && (~this.pwm_checked && (trans.pwm_samples >= 256)))
+  Row   5:          1  this.pwm_checked_0            (~trans.we && (trans.addr == 512) && (trans.pwm_samples >= 256))
+  Row   6:    ***0***  this.pwm_checked_1            (~trans.we && (trans.addr == 512))
+  Row   7:    ***0***  (trans.pwm_samples >= 256)_0  (~trans.we && (trans.addr == 512) && ~this.pwm_checked)
+  Row   8:          1  (trans.pwm_samples >= 256)_1  (~trans.we && (trans.addr == 512) && ~this.pwm_checked)
+
+----------------Focused Condition View-------------------
+Line       45 Item    1  (((trans.pwm_high_samples + 2) < this.last_duty_cycle) || (trans.pwm_high_samples > (this.last_duty_cycle + 2)))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+                                             Input Term   Covered  Reason for no coverage   Hint
+                                            -----------  --------  -----------------------  --------------
+  ((trans.pwm_high_samples + 2) < this.last_duty_cycle)         N  '_1' not hit             Hit '_1'
+  (trans.pwm_high_samples > (this.last_duty_cycle + 2))         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                               Non-masking condition(s)      
+ ---------  ---------  --------------------                                     -------------------------     
+  Row   1:          1  ((trans.pwm_high_samples + 2) < this.last_duty_cycle)_0  ~(trans.pwm_high_samples > (this.last_duty_cycle + 2))
+  Row   2:    ***0***  ((trans.pwm_high_samples + 2) < this.last_duty_cycle)_1  -                             
+  Row   3:          1  (trans.pwm_high_samples > (this.last_duty_cycle + 2))_0  ~((trans.pwm_high_samples + 2) < this.last_duty_cycle)
+  Row   4:    ***0***  (trans.pwm_high_samples > (this.last_duty_cycle + 2))_1  ~((trans.pwm_high_samples + 2) < this.last_duty_cycle)
+
+----------------Focused Condition View-------------------
+Line       56 Item    1  (~trans.we && (trans.addr == 516))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       57 Item    1  ((trans.rdata === x) || (trans.rdata === z) || (trans.rdata == 0))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+  (trans.rdata === x)         N  '_1' not hit             Hit '_1'
+  (trans.rdata === z)         N  '_1' not hit             Hit '_1'
+   (trans.rdata == 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:          1  (trans.rdata === x)_0  ~((trans.rdata === z) || (trans.rdata == 0))
+  Row   2:    ***0***  (trans.rdata === x)_1  -                             
+  Row   3:          1  (trans.rdata === z)_0  (~(trans.rdata === x) && ~(trans.rdata == 0))
+  Row   4:    ***0***  (trans.rdata === z)_1  ~(trans.rdata === x)          
+  Row   5:          1  (trans.rdata == 0)_0   (~(trans.rdata === x) && ~(trans.rdata === z))
+  Row   6:    ***0***  (trans.rdata == 0)_1   (~(trans.rdata === x) && ~(trans.rdata === z))
+
+----------------Focused Condition View-------------------
+Line       65 Item    1  (trans.we && (trans.addr == 768))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       71 Item    1  (trans.spi_transfer_done && ~this.spi_checked)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       72 Item    1  (trans.spi_tx_observed !== this.last_spi_byte)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                      Input Term   Covered  Reason for no coverage   Hint
+                                     -----------  --------  -----------------------  --------------
+  (trans.spi_tx_observed !== this.last_spi_byte)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                        Non-masking condition(s)      
+ ---------  ---------  --------------------                              -------------------------     
+  Row   1:          1  (trans.spi_tx_observed !== this.last_spi_byte)_0  -                             
+  Row   2:    ***0***  (trans.spi_tx_observed !== this.last_spi_byte)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       76 Item    1  (trans.spi_rx_observed !== 255)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                       Input Term   Covered  Reason for no coverage   Hint
+                      -----------  --------  -----------------------  --------------
+  (trans.spi_rx_observed !== 255)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                         Non-masking condition(s)      
+ ---------  ---------  --------------------               -------------------------     
+  Row   1:          1  (trans.spi_rx_observed !== 255)_0  -                             
+  Row   2:    ***0***  (trans.spi_rx_observed !== 255)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       85 Item    1  (~trans.we && (trans.addr == 560))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       86 Item    1  (trans.rdata[0] !== 1'b0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (trans.rdata[0] !== 1'b0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          1  (trans.rdata[0] !== 1'b0)_0  -                             
+  Row   2:    ***0***  (trans.rdata[0] !== 1'b0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       92 Item    1  (~trans.we && (trans.addr == 564))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       93 Item    1  (trans.rdata[2:0] !== 7)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                Input Term   Covered  Reason for no coverage   Hint
+               -----------  --------  -----------------------  --------------
+  (trans.rdata[2:0] !== 7)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                  Non-masking condition(s)      
+ ---------  ---------  --------------------        -------------------------     
+  Row   1:          1  (trans.rdata[2:0] !== 7)_0  -                             
+  Row   2:    ***0***  (trans.rdata[2:0] !== 7)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       100 Item    1  (~trans.we && (trans.addr == 520))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       102 Item    1  (this.stall_read_count == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       103 Item    1  (trans.rdata[0] !== 1'b1)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (trans.rdata[0] !== 1'b1)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          1  (trans.rdata[0] !== 1'b1)_0  -                             
+  Row   2:    ***0***  (trans.rdata[0] !== 1'b1)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       110 Item    1  (this.stall_read_count == 2)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                    Input Term   Covered  Reason for no coverage   Hint
+                   -----------  --------  -----------------------  --------------
+  (this.stall_read_count == 2)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                      Non-masking condition(s)      
+ ---------  ---------  --------------------            -------------------------     
+  Row   1:    ***0***  (this.stall_read_count == 2)_0  -                             
+  Row   2:          1  (this.stall_read_count == 2)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       111 Item    1  (trans.rdata[0] !== 1'b0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (trans.rdata[0] !== 1'b0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          1  (trans.rdata[0] !== 1'b0)_0  -                             
+  Row   2:    ***0***  (trans.rdata[0] !== 1'b0)_1  -                             
+
+
+
+
+
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins         29        29         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cpu_bus_pkg/cpu_bus_coverage/cg                100.00%        100          -    Covered              
+    covered/total bins:                                    29         29          -                      
+    missing/total bins:                                     0         29          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_we                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                          12          1          -    Covered              
+        bin read                                            7          1          -    Covered              
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin motor_duty                                      2          1          -    Covered              
+        bin motor_rpm                                       1          1          -    Covered              
+        bin motor_stall                                     3          1          -    Covered              
+        bin profile_steps                                   8          1          -    Covered              
+        bin profile_ctrl                                    2          1          -    Covered              
+        bin profile_index                                   1          1          -    Covered              
+        bin spi_data                                        1          1          -    Covered              
+        bin spi_status                                      1          1          -    Covered              
+    Coverpoint cp_pwm                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                            16          1          -    Covered              
+        bin high                                            3          1          -    Covered              
+    Coverpoint cp_failsafe                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin stalled                                         6          1          -    Covered              
+        bin not_stalled                                    13          1          -    Covered              
+    Coverpoint cp_spi_activity                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                            6          1          -    Covered              
+        bin one                                            13          1          -    Covered              
+    Cross x_failsafe_holds                            100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <not_stalled,high>                          3          1          -    Covered              
+            bin <not_stalled,low>                          10          1          -    Covered              
+            bin <stalled,low>                               6          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin bad_combo_not_scored_here            0                     -    ZERO                 
+    Cross x_addr_vs_we                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <spi_status,read>                           1          1          -    Covered              
+            bin <profile_index,read>                        1          1          -    Covered              
+            bin <profile_ctrl,read>                         1          1          -    Covered              
+            bin <motor_stall,read>                          2          1          -    Covered              
+            bin <motor_rpm,read>                            1          1          -    Covered              
+            bin <spi_data,write>                            1          1          -    Covered              
+            bin <profile_ctrl,write>                        1          1          -    Covered              
+            bin <profile_steps,write>                       8          1          -    Covered              
+            bin <motor_stall,write>                         1          1          -    Covered              
+            bin <motor_duty,write>                          1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin profile_index_write_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin profile_steps_read_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin status_write_never_happens           0                     -    ZERO                 
+            ignore_bin spi_read_never_happens               0                     -    ZERO                 
+            ignore_bin rpm_write_never_happens              0                     -    ZERO                 
+            ignore_bin duty_read_never_happens              1                     -    Occurred             
+ Covergroup instance \/cpu_bus_pkg::cpu_bus_coverage::cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    29         29          -                      
+    missing/total bins:                                     0         29          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_we                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                          12          1          -    Covered              
+        bin read                                            7          1          -    Covered              
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin motor_duty                                      2          1          -    Covered              
+        bin motor_rpm                                       1          1          -    Covered              
+        bin motor_stall                                     3          1          -    Covered              
+        bin profile_steps                                   8          1          -    Covered              
+        bin profile_ctrl                                    2          1          -    Covered              
+        bin profile_index                                   1          1          -    Covered              
+        bin spi_data                                        1          1          -    Covered              
+        bin spi_status                                      1          1          -    Covered              
+    Coverpoint cp_pwm                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                            16          1          -    Covered              
+        bin high                                            3          1          -    Covered              
+    Coverpoint cp_failsafe                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin stalled                                         6          1          -    Covered              
+        bin not_stalled                                    13          1          -    Covered              
+    Coverpoint cp_spi_activity                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                            6          1          -    Covered              
+        bin one                                            13          1          -    Covered              
+    Cross x_failsafe_holds                            100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <not_stalled,high>                          3          1          -    Covered              
+            bin <not_stalled,low>                          10          1          -    Covered              
+            bin <stalled,low>                               6          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin bad_combo_not_scored_here            0                     -    ZERO                 
+    Cross x_addr_vs_we                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <spi_status,read>                           1          1          -    Covered              
+            bin <profile_index,read>                        1          1          -    Covered              
+            bin <profile_ctrl,read>                         1          1          -    Covered              
+            bin <motor_stall,read>                          2          1          -    Covered              
+            bin <motor_rpm,read>                            1          1          -    Covered              
+            bin <spi_data,write>                            1          1          -    Covered              
+            bin <profile_ctrl,write>                        1          1          -    Covered              
+            bin <profile_steps,write>                       8          1          -    Covered              
+            bin <motor_stall,write>                         1          1          -    Covered              
+            bin <motor_duty,write>                          1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin profile_index_write_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin profile_steps_read_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin status_write_never_happens           0                     -    ZERO                 
+            ignore_bin spi_read_never_happens               0                     -    ZERO                 
+            ignore_bin rpm_write_never_happens              0                     -    ZERO                 
+            ignore_bin duty_read_never_happens              1                     -    Occurred             
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     226       174        52    76.99%
+
+================================Statement Details================================
+
+Statement Coverage for instance /cpu_bus_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File cpu_bus_seq_item.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    5               4                    ***0***     
+    5               5                    ***0***     
+    5               6                         19     
+    5               7                    ***0***     
+    5               8                    ***0***     
+    5               9                    ***0***     
+    5              10                    ***0***     
+    39              1                         38     
+    40              1                         38     
+    41              1                         38     
+    42              1                         38     
+    43              1                         38     
+    44              1                         38     
+    45              1                         38     
+  File cpu_bus_sequence.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    5               4                    ***0***     
+    5               5                    ***0***     
+    5               6                          1     
+    5               7                    ***0***     
+    5               8                    ***0***     
+    5               9                    ***0***     
+    5              10                    ***0***     
+    8               1                          1     
+    13              1                          1     
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+    24              1                          1     
+    27              1                          1     
+    30              1                          1     
+    31              1                          1     
+    32              1                          1     
+    33              1                          1     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+    43              1                          1     
+    44              1                          1     
+    45              1                          1     
+    50              1                          1     
+    53              1                          1     
+    56              1                          1     
+    57              1                          1     
+    58              1                          1     
+    59              1                          1     
+    62              1                          1     
+    62              2                          8     
+    63              1                          8     
+    64              1                          8     
+    65              1                          8     
+    70              1                          8     
+    74              1                          1     
+    75              1                          1     
+    76              1                          1     
+    81              1                          1     
+    84              1                          1     
+    86              1                          1     
+    87              1                          1     
+    88              1                          1     
+    89              1                          1     
+    91              1                          1     
+    92              1                          1     
+    93              1                          1     
+    94              1                          1     
+    98              1                          1     
+    100             1                          1     
+    101             1                          1     
+    102             1                          1     
+    103             1                          1     
+    106             1                          1     
+    107             1                          1     
+    108             1                          1     
+    113             1                          1     
+    116             1                          1     
+    117             1                          1     
+    118             1                          1     
+    119             1                          1     
+  File cpu_bus_driver.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    9               1                          1     
+    13              1                          1     
+    14              1                          1     
+    19              1                          1     
+    20              1                          1     
+    22              1                          1     
+    23              1                         20     
+    26              1                         19     
+    27              1                         19     
+    28              1                         19     
+    29              1                         19     
+    30              1                         12     
+    33              1                         57     
+    34              1                         57     
+    38              1                         19     
+    39              1                          7     
+    41              1                         19     
+  File cpu_bus_monitor.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    19              1                          1     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+    30              1                          1     
+    32              1                    ***0***     
+    38              1                          1     
+    39              1                        747     
+    43              1                        256     
+    45              1                         64     
+    50              1                          1     
+    52              1                        746     
+    56              1                         19     
+    57              1                         19     
+    58              1                         19     
+    59              1                         19     
+    60              1                         19     
+    62              1                         19     
+    63              1                         19     
+    64              1                         19     
+    65              1                         19     
+    66              1                         19     
+    67              1                         19     
+    69              1                         19     
+    70              1                         19     
+    73              1                         19     
+    74              1                         19     
+    75              1                         19     
+    76              1                         19     
+    78              1                         19     
+    81              1                          1     
+    82              1                          1     
+    83              1                          1     
+  File cpu_bus_scoreboard.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    19              1                          1     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+    27              1                          1     
+    28              1                          1     
+    35              1                    ***0***     
+    39              1                          1     
+    40              1                          1     
+    47              1                    ***0***     
+    50              1                          1     
+    52              1                          1     
+    58              1                    ***0***     
+    60              1                          1     
+    61              1                          1     
+    66              1                          1     
+    67              1                          1     
+    73              1                    ***0***     
+    77              1                    ***0***     
+    79              1                          1     
+    81              1                          1     
+    87              1                    ***0***     
+    89              1                          1     
+    94              1                    ***0***     
+    96              1                          1     
+    101             1                          2     
+    104             1                    ***0***     
+    106             1                          1     
+    107             1                          1     
+    112             1                    ***0***     
+    114             1                          1     
+    121             1                    ***0***     
+    123             1                    ***0***     
+    125             1                    ***0***     
+    127             1                    ***0***     
+  File cpu_bus_coverage.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                    ***0***     
+    63              1                          1     
+    64              1                          1     
+    68              1                         19     
+    69              1                         19     
+    73              1                          1     
+  File cpu_bus_env.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                    ***0***     
+    9               1                          1     
+    13              1                          1     
+    14              1                          1     
+    15              1                          1     
+    16              1                          1     
+    20              1                          1     
+    21              1                          1     
+    26              1                    ***0***     
+    26              2                    ***0***     
+    26              3                    ***0***     
+    33              1                          1     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+    44              1                          1     
+    45              1                          1     
+    46              1                          1     
+  File cpu_bus_test.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                          1     
+    10              1                          1     
+    14              1                          1     
+    15              1                          1     
+    19              1                          1     
+    20              1                          1     
+    22              1                          1     
+    23              1                          1     
+    25              1                          1     
+    26              1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cpu_bus_pkg/cpu_bus_coverage/cg                100.00%        100          -    Covered              
+    covered/total bins:                                    29         29          -                      
+    missing/total bins:                                     0         29          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_we                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                          12          1          -    Covered              
+        bin read                                            7          1          -    Covered              
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin motor_duty                                      2          1          -    Covered              
+        bin motor_rpm                                       1          1          -    Covered              
+        bin motor_stall                                     3          1          -    Covered              
+        bin profile_steps                                   8          1          -    Covered              
+        bin profile_ctrl                                    2          1          -    Covered              
+        bin profile_index                                   1          1          -    Covered              
+        bin spi_data                                        1          1          -    Covered              
+        bin spi_status                                      1          1          -    Covered              
+    Coverpoint cp_pwm                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                            16          1          -    Covered              
+        bin high                                            3          1          -    Covered              
+    Coverpoint cp_failsafe                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin stalled                                         6          1          -    Covered              
+        bin not_stalled                                    13          1          -    Covered              
+    Coverpoint cp_spi_activity                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                            6          1          -    Covered              
+        bin one                                            13          1          -    Covered              
+    Cross x_failsafe_holds                            100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <not_stalled,high>                          3          1          -    Covered              
+            bin <not_stalled,low>                          10          1          -    Covered              
+            bin <stalled,low>                               6          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin bad_combo_not_scored_here            0                     -    ZERO                 
+    Cross x_addr_vs_we                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <spi_status,read>                           1          1          -    Covered              
+            bin <profile_index,read>                        1          1          -    Covered              
+            bin <profile_ctrl,read>                         1          1          -    Covered              
+            bin <motor_stall,read>                          2          1          -    Covered              
+            bin <motor_rpm,read>                            1          1          -    Covered              
+            bin <spi_data,write>                            1          1          -    Covered              
+            bin <profile_ctrl,write>                        1          1          -    Covered              
+            bin <profile_steps,write>                       8          1          -    Covered              
+            bin <motor_stall,write>                         1          1          -    Covered              
+            bin <motor_duty,write>                          1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin profile_index_write_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin profile_steps_read_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin status_write_never_happens           0                     -    ZERO                 
+            ignore_bin spi_read_never_happens               0                     -    ZERO                 
+            ignore_bin rpm_write_never_happens              0                     -    ZERO                 
+            ignore_bin duty_read_never_happens              1                     -    Occurred             
+ Covergroup instance \/cpu_bus_pkg::cpu_bus_coverage::cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    29         29          -                      
+    missing/total bins:                                     0         29          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_we                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                          12          1          -    Covered              
+        bin read                                            7          1          -    Covered              
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin motor_duty                                      2          1          -    Covered              
+        bin motor_rpm                                       1          1          -    Covered              
+        bin motor_stall                                     3          1          -    Covered              
+        bin profile_steps                                   8          1          -    Covered              
+        bin profile_ctrl                                    2          1          -    Covered              
+        bin profile_index                                   1          1          -    Covered              
+        bin spi_data                                        1          1          -    Covered              
+        bin spi_status                                      1          1          -    Covered              
+    Coverpoint cp_pwm                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                            16          1          -    Covered              
+        bin high                                            3          1          -    Covered              
+    Coverpoint cp_failsafe                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin stalled                                         6          1          -    Covered              
+        bin not_stalled                                    13          1          -    Covered              
+    Coverpoint cp_spi_activity                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                            6          1          -    Covered              
+        bin one                                            13          1          -    Covered              
+    Cross x_failsafe_holds                            100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <not_stalled,high>                          3          1          -    Covered              
+            bin <not_stalled,low>                          10          1          -    Covered              
+            bin <stalled,low>                               6          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin bad_combo_not_scored_here            0                     -    ZERO                 
+    Cross x_addr_vs_we                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <spi_status,read>                           1          1          -    Covered              
+            bin <profile_index,read>                        1          1          -    Covered              
+            bin <profile_ctrl,read>                         1          1          -    Covered              
+            bin <motor_stall,read>                          2          1          -    Covered              
+            bin <motor_rpm,read>                            1          1          -    Covered              
+            bin <spi_data,write>                            1          1          -    Covered              
+            bin <profile_ctrl,write>                        1          1          -    Covered              
+            bin <profile_steps,write>                       8          1          -    Covered              
+            bin <motor_stall,write>                         1          1          -    Covered              
+            bin <motor_duty,write>                          1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin profile_index_write_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin profile_steps_read_never_happens 
+                                                            0                     -    ZERO                 
+            ignore_bin status_write_never_happens           0                     -    ZERO                 
+            ignore_bin spi_read_never_happens               0                     -    ZERO                 
+            ignore_bin rpm_write_never_happens              0                     -    ZERO                 
+            ignore_bin duty_read_never_happens              1                     -    Occurred             
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_uvm_system_top/motor/apb_motor_ctrl_sva_inst/assert__p_failsafe_pwm_low_when_stalled
+                     motor_assertions.sv(20)            0          1
+
+Total Coverage By Instance (filtered view): 72.47%
+
