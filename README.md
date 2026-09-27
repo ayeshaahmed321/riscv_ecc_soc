@@ -42,7 +42,7 @@ vlog verif/cpu_bus_pkg.sv verif/ecc_mem_pkg.sv
 vlog verif/tb_soc_top.sv verif/tb_uvm_top.sv verif/tb_uvm_system_top.sv
 
 
-Run the following command blocks sequentially to execute the three verification environments and generate detailed .txt coverage reports:
+#Run the following command blocks sequentially to execute the three verification environments and generate detailed .txt coverage reports:
 
 # ---------------------------------------------------------
 # Run System Bus UVM & Generate Detailed Coverage
