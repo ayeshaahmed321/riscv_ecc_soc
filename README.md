@@ -1,7 +1,7 @@
-# Functional Verification of an RV32I SoC with AMBA Peripherals
+# RISC-V SoC with ECC-Protected Memory
 
 ## Project Overview
-* **Project Title:** Functional Verification of an RV32I SoC utilizing UVM and SVA
+* **Project Title:** RISC-V SoC with ECC-Protected Memory
 * **Team Members:** Ayesha Ahmed, Malaika Ghazanfar, Syeda Fatima Mehdvi
 * **Project Objective:** To architect, implement, and rigorously verify a custom RISC-V System-on-Chip utilizing a hybrid verification strategy (UVM, SystemVerilog Assertions, and directed bare-metal testing) to achieve 100% functional coverage.
 * **System Description:** The proposed system is a 32-bit architecture targeting FPGA implementation. An RV32I RISC-V CPU acts as the primary master, communicating through an AMBA matrix (AXI/APB) to an AXI-attached SRAM with SECDED ECC hardware, an APB motor controller with tachometer profiling and fail-safes, and an APB SPI Master.
