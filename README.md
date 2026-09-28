@@ -41,31 +41,60 @@ vlog -mfcu -cuname sva_unit verif/core_assertions.sv verif/ecc_assertions.sv ver
 vlog verif/cpu_bus_pkg.sv verif/ecc_mem_pkg.sv
 vlog verif/tb_soc_top.sv verif/tb_uvm_top.sv verif/tb_uvm_system_top.sv
 
-
 #Run the following command blocks sequentially to execute the three verification environments and generate detailed .txt coverage reports:
 
 # ---------------------------------------------------------
-# Run System Bus UVM & Generate Detailed Coverage
+# Run System Bus UVM, Load Waves & Generate Detailed Coverage
 # ---------------------------------------------------------
 vsim -coverage -suppress 10717,12036 -voptargs=+acc work.tb_uvm_system_top work.sva_unit
+add wave -divider "UVM CPU Bus"
+add wave -radix hex /tb_uvm_system_top/vif/addr
+add wave /tb_uvm_system_top/vif/we
+add wave -radix hex /tb_uvm_system_top/vif/wdata
+add wave -divider "Physical Telemetry"
+add wave -color red /tb_uvm_system_top/pwm_out
+add wave -color yellow /tb_uvm_system_top/nmi_stall_w
+add wave -color cyan /tb_uvm_system_top/mosi
+add wave -color cyan /tb_uvm_system_top/sclk
+add wave -color cyan /tb_uvm_system_top/cs_n
 run -all
 coverage save temp_cpu.ucdb
 vcover report -details -all -output reports/cpu_bus_coverage_detailed.txt temp_cpu.ucdb
 file delete temp_cpu.ucdb
 
 # ---------------------------------------------------------
-# Run ECC Memory UVM & Generate Detailed Coverage
+# Run ECC Memory UVM, Load Waves & Generate Detailed Coverage
 # ---------------------------------------------------------
 vsim -coverage -suppress 10717,12036 -voptargs=+acc work.tb_uvm_top work.sva_unit
+add wave -divider "ECC Memory Bus"
+add wave -radix hex /tb_uvm_top/vif/addr
+add wave /tb_uvm_top/vif/we
+add wave -radix hex /tb_uvm_top/vif/wdata
+add wave -radix hex /tb_uvm_top/vif/rdata
+add wave -divider "ECC Status"
+add wave -color red /tb_uvm_top/vif/single_err
+add wave -color red /tb_uvm_top/vif/double_err
 run -all
 coverage save temp_ecc.ucdb
 vcover report -details -all -output reports/ecc_mem_coverage_detailed.txt temp_ecc.ucdb
 file delete temp_ecc.ucdb
 
 # ---------------------------------------------------------
-# Run Directed SoC & Generate Detailed Coverage
+# Run Directed SoC, Load Waves & Generate Detailed Coverage
 # ---------------------------------------------------------
 vsim -coverage -suppress 10717,12036 -voptargs=+acc work.tb_soc_top work.sva_unit
+add wave -divider "System Control"
+add wave /tb_soc_top/clk
+add wave /tb_soc_top/reset
+add wave -divider "RV32I Core"
+add wave -radix hex /tb_soc_top/dut/processor/pc
+add wave -radix hex /tb_soc_top/dut/instr
+add wave -divider "Peripherals"
+add wave -color red /tb_soc_top/pwm_out
+add wave -color cyan /tb_soc_top/cs_n
+add wave -color cyan /tb_soc_top/sclk
+add wave -color cyan /tb_soc_top/mosi
+add wave -color yellow -radix hex /tb_soc_top/errors
 run -all
 coverage save temp_dir.ucdb
 vcover report -details -all -output reports/directed_coverage_detailed.txt temp_dir.ucdb
